@@ -1,0 +1,23 @@
+base theme = unl_wdn
+
+name = Explore Center
+description = UNL WDN sub-theme
+screenshot = screenshot.png
+core = 7.x
+engine = phptemplate 
+
+; Main Style Sheet for Explore Center Specific
+stylesheets[all][] = explore_center.css
+
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+
+regions[content] = Main Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[navlinks] = Navigation Links
+regions[leftcollinks] = Related Links
+regions[contactinfo] = Contact Us
+regions[optionalfooter] = Optional Footer
+regions[footercontent] = Footer Content

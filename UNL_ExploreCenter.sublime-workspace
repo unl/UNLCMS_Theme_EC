@@ -1,0 +1,382 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"initi",
+				"initialDisplay"
+			],
+			[
+				"reg",
+				"registerHelper"
+			],
+			[
+				"quee",
+				"queueplacement-wrapper"
+			],
+			[
+				"data",
+				"data"
+			],
+			[
+				"lo",
+				"loadWaitingTemplate"
+			],
+			[
+				"page",
+				"pageSizes"
+			],
+			[
+				"sub",
+				"submitValidationRequest"
+			],
+			[
+				"valida",
+				"validateURL"
+			],
+			[
+				"su",
+				"submit_button"
+			],
+			[
+				"val",
+				"validateURL"
+			],
+			[
+				"get",
+				"getHTMLValidationResults"
+			],
+			[
+				"show",
+				"showHTMLValidationResults"
+			],
+			[
+				"JSON",
+				"getJSON"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"load",
+				"loadSummaryTemplate"
+			],
+			[
+				"vali",
+				"validator"
+			],
+			[
+				"event",
+				"event"
+			],
+			[
+				"submit",
+				"submitQuery"
+			],
+			[
+				"render",
+				"renderResults"
+			],
+			[
+				"Valid",
+				"ValidatorRecord"
+			],
+			[
+				"font",
+				"font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"git am",
+				"Git: Amend Commit"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"git",
+				"Git: Amend Commit"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/smeranda/Documents/workspace/UNL_WDN/config.sample.php",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/less/forms.less",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/templates/email/UNL/Assessment/Mailer.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/scripts/sendTestEmail.php",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/scripts/process_queue.php",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/src/UNL/WDN/Assessment/Mailer.php",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/lib/php/UNL/WDN/Emailer/Main.php",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/less/layouts.less",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/less/report.less",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/less/spinner.less",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/index.php",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/js/main.js",
+		"/Users/smeranda/Documents/workspace/screengrabs/delocal.js",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/css/images/external.svg",
+		"/Users/smeranda/Documents/workspace/screengrabs/simple_grab.js",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/.buildpath",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/less/table.less",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/less/main.less",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/README.md",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/less/buttons.less",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/css/images/n.svg",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/Makefile",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/js/lib/handlebars-1.0.0-rc3.js",
+		"/Users/smeranda/Documents/Google Drive/Consulting/Kansas Wesleyan/analytics.js",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/js/lib/handlebars-1.0.0-rc.3.js",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/templates/summary.handlebars",
+		"/Users/smeranda/Documents/Google Drive/Google Analytics/jQueryAnalyticsExtensions.js",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/js/handlebars-1.0.0-rc.3.js",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/js/backbone-0.9.10-min.js",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/js/underscore-1.4.4-min.js",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/css/main.css",
+		"/Users/smeranda/Documents/workspace/UNL_WDNTemplates/sandbox/css/images/paper_fibers.jpg",
+		"/Users/smeranda/Library/Application Support/Sublime Text 2/Packages/User/less2css.sublime-settings",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/config.sample.php",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/UNL_Validator.sublime-workspace",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/.gitignore",
+		"/Users/smeranda/Documents/workspace/UNL_Validator/www/config.inc.php",
+		"/Users/smeranda/Documents/workspace/UNL_Calendar/install.sh",
+		"/Users/smeranda/Dropbox/Apps/Backlift/gallery/app/photos.handlebars",
+		"/Users/smeranda/Dropbox/Apps/Backlift/gallery/app/main.js",
+		"/Users/smeranda/Documents/workspace/UNL_WDNTemplates/debug.shtml",
+		"/Users/smeranda/Library/Application Support/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
+		"/Users/smeranda/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/smeranda/Documents/workspace/behave/public/images/behave_logov2.svg",
+		"/Users/smeranda/Documents/workspace/UNL_UndergraduateBulletin/www/templates/html/Controller.tpl.php",
+		"/Users/smeranda/Downloads/fontello-ecb6d3ce/config.json",
+		"/Users/smeranda/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"loadWaitingTemplate",
+			"trigger",
+			"submitValidationRequest",
+			"subsequentQuery",
+			"loadContactTemplate",
+			"loader",
+			"mini_loader",
+			"loadContactTemplate",
+			"loader",
+			"2187e7",
+			"9E0202",
+			"2187e7",
+			"compile",
+			";\n",
+			"”:",
+			"containing “",
+			"”:",
+			"containing “",
+			"”:",
+			":\n",
+			"”:",
+			"containing “",
+			"containing",
+			"containing “",
+			"</span></p>",
+			":",
+			"<p class=\"list\"><span class=\"generated-style\">"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"9E0202",
+			"</dd>",
+			"</dt><dd>",
+			"<dt>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				".buildpath"
+			],
+			[
+				"main",
+				"/Users/smeranda/Dropbox/Apps/Backlift/gallery/app/main.js"
+			],
+			[
+				"mai",
+				"/Users/smeranda/Dropbox/Apps/Backlift/gallery/app/main.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/smeranda/Dropbox/Apps/Backlift/gallery/backbone-gallery.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true
+}

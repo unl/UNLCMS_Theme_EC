@@ -1,0 +1,44 @@
+#maincontent {
+    line-height: 2;
+
+    h2 {
+        line-height: 2.7;
+        padding-top: 0;
+    }
+
+    .horiztontal-list {
+
+        .visual-island {
+            background: #e5e3d2;
+            border-radius: 3px;
+        }
+
+        a {
+            text-align: center;
+            display: block;
+            color: darken(#e5e3d2, 65%);
+            font-weight: bold;
+        }
+    }
+
+    ul, ol {
+        &[class*="wdn-grid-set"] {
+            padding-left: 0;
+            list-style: none;
+        }
+    }
+
+    .ec-heading {
+        line-height: 1;
+        margin: 1em 0;
+        padding: 0.2em 0;
+
+        span {
+            display: block;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: lighten(#535353, 20%);
+            font-size: 0.5em;
+        }
+    }
+}

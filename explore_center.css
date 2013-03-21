@@ -1,0 +1,5 @@
+#maincontent{line-height:2;}#maincontent h2{line-height:2.7;padding-top:0;}
+#maincontent .horiztontal-list .visual-island{background:#e5e3d2;border-radius:3px;}
+#maincontent .horiztontal-list a{text-align:center;display:block;color:#444127;font-weight:bold;}
+#maincontent ul[class*="wdn-grid-set"],#maincontent ol[class*="wdn-grid-set"]{padding-left:0;list-style:none;}
+#maincontent .ec-heading{line-height:1;margin:1em 0;padding:0.2em 0;}#maincontent .ec-heading span{display:block;text-transform:uppercase;font-weight:normal;color:#868686;font-size:0.5em;}
