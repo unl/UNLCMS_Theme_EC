@@ -26,7 +26,7 @@
     </div>
 </nav>
 <div class="wdn-band">
-    <div class="wdn-inner-wrapper">
+    <div class="wdn-inner-wrapper horizontal-seperator">
         <section id="overview" class="bp2-wdn-grid-set-halves">
             <figure class="wdn-col">
                 <?php print render($content['field_program_photo']); ?>
@@ -42,10 +42,10 @@
     </div>
 </div>
 <div class="wdn-band">
-    <div class="wdn-inner-wrapper" id="professional-degrees">
+    <div class="wdn-inner-wrapper horizontal-seperator">
         <section id="coursework" class="wdn-grid-set">
             <div class="bp2-wdn-col-two-thirds">
-                <h2 class="ec-heading">
+                <h2 class="ec-heading flag">
                     <span><?php print $content['field_coursework']["#object"]->title; ?></span>
                     <?php print $content['field_coursework']["#title"]; ?>
                 </h2>
@@ -58,26 +58,26 @@
     </div>
 </div>
 <div class="wdn-band">
-    <div class="wdn-inner-wrapper">
+    <div class="wdn-inner-wrapper horizontal-seperator">
         <section id="application-info" class="wdn-grid-set">
+            <div class="bp2-wdn-col-one-third">
+                Anything we can put here?
+            </div>
             <div class="bp2-wdn-col-two-thirds">
-                <h2 class="ec-heading">
+                <h2 class="ec-heading flag reverse">
                     <span><?php print $content['field_application_information']["#object"]->title; ?></span>
                     <?php print $content['field_application_information']["#title"]; ?>
                 </h2>
                 <?php print render($content['field_application_information']); ?>
             </div>
-            <div class="bp2-wdn-col-one-third">
-                Anything we can put here?
-            </div>
         </section>
     </div>
 </div>
 <div class="wdn-band">
-    <div class="wdn-inner-wrapper" id="entrance-exams" >
+    <div class="wdn-inner-wrapper horizontal-seperator" id="entrance-exams" >
         <section class="bp2-wdn-grid-set-halves">
             <div class="wdn-col">
-                <h2 class="ec-heading">
+                <h2 class="ec-heading flag">
                     <span><?php print $content['field_entrance_exams']["#object"]->title; ?></span>
                     <?php print $content['field_entrance_exams']["#title"]; ?>
                 </h2>
@@ -90,10 +90,10 @@
     </div>
 </div>
 <div class="wdn-band">
-    <div class="wdn-inner-wrapper" id="professional-degrees">
+    <div class="wdn-inner-wrapper horizontal-seperator" id="professional-degrees">
         <section class="wdn-grid-set">
             <div class="wdn-col-full">
-                <h2 class="ec-heading sec_header">
+                <h2 class="ec-heading">
                     <span><?php print $content['field_professional_degrees_intro']["#object"]->title; ?></span>
                     Professional Degrees <?php // The field name is different, so just hard code for now ?>
                 </h2>
@@ -120,7 +120,7 @@
     <div class="wdn-inner-wrapper" id="additional-resources">
         <section class="wdn-grid-set">
             <div class="wdn-col-full">
-                <h2 class="ec-heading">
+                <h2 class="ec-heading flag">
                     <span><?php print $content['field_additional_resources']["#object"]->title; ?></span>
                     <?php print $content['field_additional_resources']["#title"]; ?>
                 </h2>
