@@ -26,7 +26,7 @@
     </div>
 </nav>
 <div class="wdn-band">
-    <div class="wdn-inner-wrapper horizontal-seperator">
+    <div class="wdn-inner-wrapper horizontal-separator">
         <section id="overview" class="bp2-wdn-grid-set-halves">
             <figure class="wdn-col">
                 <?php print render($content['field_program_photo']); ?>

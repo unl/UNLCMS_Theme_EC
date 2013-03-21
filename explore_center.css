@@ -2,7 +2,7 @@
 #maincontent .horiztontal-list .visual-island{background:#e5e3d2;border-radius:3px;}
 #maincontent .horiztontal-list a{text-align:center;display:block;color:#444127;font-weight:bold;}
 #maincontent ul[class*="wdn-grid-set"],#maincontent ol[class*="wdn-grid-set"]{padding-left:0;list-style:none;}
-#maincontent .horizontal-seperator{background:url(images/horizontal-seperator.png) bottom center no-repeat;padding-bottom:70px;margin-bottom:40px;}
+#maincontent .horizontal-separator{background:url(images/horizontal-separator.png) bottom center no-repeat;padding-bottom:70px;margin-bottom:40px;}
 #maincontent .ec-heading{line-height:1;margin:0.5em 0;padding:0.2em 0;}#maincontent .ec-heading span{display:block;text-transform:uppercase;font-weight:normal;color:#868686;font-size:0.5em;}
 #maincontent .ec-heading.flag{padding:0.5em 0 0.5em 60px;background:url(images/title-flag.png) top left no-repeat;}
 #maincontent .ec-heading.reverse{text-align:right;}#maincontent .ec-heading.reverse.flag{background:url(images/title-flag-reverse.png) top right no-repeat;padding:0.5em 60px 0.5em 0;}
