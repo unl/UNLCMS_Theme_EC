@@ -1,0 +1,23 @@
+.impactFont() {
+    font-family: 'Oswald', Helvetica, Arial, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+}
+
+.modernFont() {
+    font-family: "Lucida Grande",Verdana,Arial,sans-serif;
+}
+.formalFont() {
+    font-family: 'Neuton', Georgia, 'Bitstream Charter', 'Century Schoolbook L', 'Liberation Serif', Times, serif;
+}
+
+.baseText() {
+    .formalFont();
+    font-size: 16px;
+    line-height: 1.6;
+    color: #787878;
+}
+
+// Breakpoint rules (removing 600px BP)
+@bp1: ~"min-width: 480px";
+@bp2: ~"min-width: 768px";
+@bp3: ~"min-width: 960px";
+@bp4: ~"min-width: 1040px";

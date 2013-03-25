@@ -1,8 +1,21 @@
-#maincontent{line-height:2;}#maincontent h2{line-height:2.7;padding-top:0;}
+@import url(http://fonts.googleapis.com/css?family=Neuton:400,700|Oswald:400,700);
+#maincontent .wdn-band{margin:0 -12px;}
+#maincontent .wdn-inner-wrapper{padding:0 12px;}
+@media only screen and (min-width: 480px){}@media only screen and (min-width: 768px){}@media only screen and (min-width: 960px){}@media only screen and (min-width: 1040px){}#maincontent{font-family:'Neuton',Georgia,'Bitstream Charter','Century Schoolbook L','Liberation Serif',Times,serif;font-size:16px;line-height:1.6;color:#787878;}#maincontent h2{line-height:2.7;padding-top:0;}
 #maincontent .horiztontal-list .visual-island{background:#e5e3d2;border-radius:3px;}
 #maincontent .horiztontal-list a{text-align:center;display:block;color:#444127;font-weight:bold;}
 #maincontent ul[class*="wdn-grid-set"],#maincontent ol[class*="wdn-grid-set"]{padding-left:0;list-style:none;}
-#maincontent .horizontal-separator{background:url(images/horizontal-separator.png) bottom center no-repeat;padding-bottom:70px;margin-bottom:40px;}
-#maincontent .ec-heading{line-height:1;margin:0.5em 0;padding:0.2em 0;}#maincontent .ec-heading span{display:block;text-transform:uppercase;font-weight:normal;color:#868686;font-size:0.5em;}
+#maincontent .horizontal-separator{background:url(images/horizontal-separator.png) center bottom no-repeat;padding-bottom:70px;margin-bottom:40px;}
+#maincontent .button{display:block;text-align:center;font-family:"Lucida Grande",Verdana,Arial,sans-serif;}#maincontent .button a{height:40px;font-size:1em;background-color:#806c53;border-radius:40px;box-shadow:0 3px 0 rgba(188, 171, 151, 0.75);color:#fff;padding:0 25px 0 45px;line-height:40px;display:inline-block;background-image:url(images/document.svg);background-repeat:no-repeat;background-size:7%;background-position:16px 7px;}#maincontent .button a:hover{background-color:#715f49;}
+#maincontent .button a:after{display:none;}
+#maincontent .button.program-checklist{margin-top:5em;}
+#maincontent .bump-down{margin-top:25px;}
+#maincontent .ec-frame{background-color:#f3f1e6;padding:3px;line-height:0;}#maincontent .ec-frame img{border-radius:2px;}
+#maincontent .ec-frame figcaption,#maincontent .ec-frame .caption{line-height:1.5em;font-style:italic;font-size:0.75em;color:#716836;}
+#maincontent .ec-heading{line-height:1;margin:0.5em 0;padding:0.2em 0;}#maincontent .ec-heading span{display:block;text-transform:uppercase;font-weight:normal;color:#868686;font-size:0.5em;font-family:'Neuton',Georgia,'Bitstream Charter','Century Schoolbook L','Liberation Serif',Times,serif;}#maincontent .ec-heading span.heading-subhead{text-transform:none;font-size:0.4em;font-weight:normal;}
 #maincontent .ec-heading.flag{padding:0.5em 0 0.5em 60px;background:url(images/title-flag.png) top left no-repeat;}
 #maincontent .ec-heading.reverse{text-align:right;}#maincontent .ec-heading.reverse.flag{background:url(images/title-flag-reverse.png) top right no-repeat;padding:0.5em 60px 0.5em 0;}
+#maincontent #page-navigation{text-align:center;background-color:#f3f1e6;margin-top:2em;margin-bottom:2em;padding:1em 0;}
+#maincontent #slider-nav{list-style:none;padding:0;font-family:'Oswald',Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;font-size:0.85em;}#maincontent #slider-nav li{display:inline-block;padding:0 1.25em;text-transform:uppercase;}
+#maincontent #slider-nav a{color:#82783e;}
+#maincontent .student-story{background-color:#f0fbf4;padding:1em;border-radius:3px;}

@@ -1,5 +1,35 @@
+// Google Webfonts
+@import url(http://fonts.googleapis.com/css?family=Neuton:400,700|Oswald:400,700);
+@import "mixins";
+@import "layouts";
+
+/* -- Non-breakpoint states for columns - MOBILE FIRST
+------------------------------------------------------------- */
+
+@media only screen and (@bp1) {
+    
+}
+
+/* -- Breakpoint 2 (.bp2)
+------------------------------------------------------------- */
+@media only screen and (@bp2) {
+    
+}
+
+/* -- Breakpoint 3 (.bp3)
+------------------------------------------------------------- */
+@media only screen and (@bp3) {
+    
+}
+
+/* -- Breakpoint 4 (.bp4)
+------------------------------------------------------------- */
+@media only screen and (@bp4) {
+    
+}
+
 #maincontent {
-    line-height: 2;
+    .baseText();
 
     h2 {
         line-height: 2.7;
@@ -29,9 +59,65 @@
     }
 
     .horizontal-separator {
-        background: url(images/horizontal-separator.png) bottom center no-repeat;
+        background: url(images/horizontal-separator.png) center bottom no-repeat;
         padding-bottom: 70px;
         margin-bottom: 40px;
+    }
+
+    .button {
+        @buttonColor: #806c53;
+        display: block;
+        text-align: center;
+        .modernFont();
+
+        a {
+            color: #fff;
+            height: 40px;
+            font-size: 1em;
+            background-color: @buttonColor;
+            border-radius: 40px;
+            box-shadow: 0 3px 0 fadeout(lighten(@buttonColor, 25%), 25%);
+            color: #fff;
+            padding: 0 25px 0 45px;
+            line-height: 40px;
+            display: inline-block;
+            background-image: url(images/document.svg);
+            background-repeat: no-repeat;
+            background-size: 7%;
+            background-position: 16px 7px;
+
+            &:hover {
+                background-color: darken(@buttonColor, 5%);
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &.program-checklist {
+            margin-top: 5em;
+        }
+    }
+
+    .bump-down { // Used to line up content in columns next to columns that begin with headings which have padding-top.
+        margin-top: 25px;
+    }
+    .ec-frame {
+        background-color: #f3f1e6;
+        padding: 3px;
+        line-height: 0;
+
+        img {
+            border-radius: 2px;
+        }
+
+        figcaption, .caption {
+            line-height: 1.5em;
+            font-style: italic;
+            font-size: 0.75em;
+            color: darken(#f3f1e6, 60%);
+        }
     }
 
     .ec-heading {
@@ -45,6 +131,13 @@
             font-weight: normal;
             color: lighten(#535353, 20%);
             font-size: 0.5em;
+            .formalFont();
+
+            &.heading-subhead {
+                text-transform: none;
+                font-size: 0.4em;
+                font-weight: normal;
+            }
         }
 
         &.flag {
@@ -60,5 +153,54 @@
                 padding: 0.5em 60px 0.5em 0;
             }
         }
+    }
+}
+
+/* 
+*
+* Program Page Navigation
+*
+*/
+
+#maincontent {
+
+    #page-navigation {
+        text-align: center;
+        background-color: #f3f1e6;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding: 1em 0;
+    }
+
+    #slider-nav {
+        list-style: none;
+        padding: 0;
+        .impactFont();
+        font-size: 0.85em;
+
+        li {
+            display: inline-block;
+            padding: 0 1.25em;
+            text-transform: uppercase;
+        }
+
+        a {
+            color: darken(#f3f1e6, 55%);
+        }
+    }
+}
+
+/* 
+*
+* Student Success Stories
+*
+*/
+
+#maincontent {
+
+    .student-story {
+        background-color: #f0fbf4;
+        padding: 1em;
+        border-radius: 3px;
     }
 }

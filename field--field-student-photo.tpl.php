@@ -1,4 +1,3 @@
-<?php // Documentation ?>
 <?php 
 foreach ($items as $item) :
 ?>
