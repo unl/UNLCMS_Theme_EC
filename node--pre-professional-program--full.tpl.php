@@ -52,9 +52,9 @@
                 <?php print render($content['field_coursework']); ?>
             </div>
             <div class="wdn-col">
-                <span class="program-checklist button document">
+                <div class="center">
                     <?php print render($content['field_program_checklist']); ?>
-                </span>
+                </div>
             </div>
         </div>
     </section>
@@ -63,7 +63,7 @@
     <div class="wdn-inner-wrapper horizontal-separator">
         <section id="application-info" class="wdn-grid-set">
             <div class="bp2-wdn-col-one-third">
-                Anything we can put here?
+                Put the PPS here
             </div>
             <div class="bp2-wdn-col-two-thirds">
                 <h2 class="ec-heading flag reverse">

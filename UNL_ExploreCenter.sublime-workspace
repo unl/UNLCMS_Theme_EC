@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"d",
+				"display"
+			],
+			[
+				"bacg",
+				"background-color"
+			],
+			[
+				"get",
+				"getNavBarTop"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
 				"initi",
 				"initialDisplay"
 			],
@@ -44,10 +64,6 @@
 				"validateURL"
 			],
 			[
-				"get",
-				"getHTMLValidationResults"
-			],
-			[
 				"show",
 				"showHTMLValidationResults"
 			],
@@ -61,10 +77,6 @@
 			],
 			[
 				"back",
-				"background-color"
-			],
-			[
-				"bac",
 				"background-color"
 			],
 			[
@@ -99,6 +111,105 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "explore_center.less",
+			"settings":
+			{
+				"buffer_size": 4578,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "layouts.less",
+			"settings":
+			{
+				"buffer_size": 120,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "node--adviser--teaser.tpl.php",
+			"settings":
+			{
+				"buffer_size": 461,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "node--adviser--abbr-teaser.tpl.php",
+			"settings":
+			{
+				"buffer_size": 285,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "node--about.tpl.php",
+			"file_size": 22,
+			"file_write_time": 1364334456000000,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "field--field-adviser-appointment-link.tpl.php",
+			"settings":
+			{
+				"buffer_size": 173,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mixins.less",
+			"settings":
+			{
+				"buffer_size": 580,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "template.php",
+			"settings":
+			{
+				"buffer_size": 1691,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "node--pre-professional-program--full.tpl.php",
+			"settings":
+			{
+				"buffer_size": 8590,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views-view--advisers.tpl.php",
+			"settings":
+			{
+				"buffer_size": 70,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views-view--advisers--block.tpl.php",
+			"settings":
+			{
+				"buffer_size": 116,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "--advisers.tpl.php",
+			"settings":
+			{
+				"buffer_size": 226,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"command_palette":
@@ -180,6 +291,14 @@
 	},
 	"file_history":
 	[
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/--advisers--block.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/--advisers.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/field--field-adviser-title.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/block--views--pre-professional-programs-block.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/field--field-program-checklist.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/field--field-student-photo.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/README.md",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/views-view-unformatted--pre-professional-programs.tpl.php",
 		"/Users/smeranda/Documents/workspace/UNL_WDN/config.sample.php",
 		"/Users/smeranda/Documents/workspace/UNL_Validator/www/less/forms.less",
 		"/Users/smeranda/Documents/workspace/UNL_Validator/www/templates/email/UNL/Assessment/Mailer.tpl.php",
@@ -244,6 +363,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"navBarMargin",
+			"seperator",
+			"horizontal-seperator",
+			"overflw",
 			"loadWaitingTemplate",
 			"trigger",
 			"submitValidationRequest",
@@ -292,8 +415,330 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "explore_center.less",
+					"settings":
+					{
+						"buffer_size": 4578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								723,
+								723
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 37.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "layouts.less",
+					"settings":
+					{
+						"buffer_size": 120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "node--adviser--teaser.tpl.php",
+					"settings":
+					{
+						"buffer_size": 461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								461,
+								461
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "node--adviser--abbr-teaser.tpl.php",
+					"settings":
+					{
+						"buffer_size": 285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "node--about.tpl.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "field--field-adviser-appointment-link.tpl.php",
+					"settings":
+					{
+						"buffer_size": 173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67,
+								67
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "mixins.less",
+					"settings":
+					{
+						"buffer_size": 580,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								580,
+								580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "template.php",
+					"settings":
+					{
+						"buffer_size": 1691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								832,
+								832
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "node--pre-professional-program--full.tpl.php",
+					"settings":
+					{
+						"buffer_size": 8590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								261
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "views-view--advisers.tpl.php",
+					"settings":
+					{
+						"buffer_size": 70,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "views-view--advisers--block.tpl.php",
+					"settings":
+					{
+						"buffer_size": 116,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								53
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "--advisers.tpl.php",
+					"settings":
+					{
+						"buffer_size": 226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								226
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -377,6 +822,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 261.0,
+	"side_bar_width": 380.0,
 	"status_bar_visible": true
 }

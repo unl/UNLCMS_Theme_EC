@@ -13,23 +13,34 @@ function explore_center_preprocess_node ( &$vars ) {
         $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__teaser';
         $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->nid . '__teaser';
     }
+    elseif ($vars["view_mode"] == 'abbr_teaser') {
+        $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__abbr_teaser';
+        $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->nid . '__abbr_teaser';
+    }
 }
 
 // Pull in external style sheet for the WDN v3 Grid
 function explore_center_preprocess_html ( &$variables ) {
     drupal_add_css('http://www.unl.edu/wdn/templates_3.1/css/content/grid-v3.css', array('type' => 'external'));
     // External CSS used for testing to circumvent the cache. Remove from production.
-    drupal_add_css('http://ucommmeranda.unl.edu/workspace/UNL_drupal_themes/explore_center/explore_center.css', array('type' => 'external'));
 }
 
-// New markup for the PDF Checklists
-function explore_center_field__field_program_checklist ( $vars ) {
-    $output = '';
-
-    foreach ($vars['items'] as $delta => $item) {
-        $output .= '<a href="' . file_create_url($item['#file']->uri) . '" class="">Download the Program Checklist</a>';
-        //$output .= '<pre>' . print_r($item->#file) . '</pre>';
+/**
+ * Implements template_preprocess_region().
+ * Adds grid classes for sidebar_first, sidebar_second, and content regions.
+ */
+function explore_center_preprocess_region(&$vars) {
+  // Determine which region needs the 'first' class
+  if ($vars['region'] == 'content') {
+    $menu_object = menu_get_object();
+    if ($menu_object->type == 'about') {
+        $vars['classes_array'][] = 'wdn-grid-set';
+        //print_r($vars['classes_array']); exit;
+        foreach ($vars['classes_array'] as $key => $value) {
+            if (in_array($value, array('grid12', 'first'))) {
+                unset($vars['classes_array'][$key]);
+            }
+        }
     }
-
-    return $output;
+  }
 }
