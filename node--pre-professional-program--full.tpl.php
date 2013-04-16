@@ -87,21 +87,7 @@
             </div>
             <div class="wdn-col">
                 <div class="student-story">
-                    <div class="wdn-grid-set">
-                        <div class="wdn-col-three-fifths">
-                            <h2 class="ec-heading">
-                                <span>Student Success</span>
-                                Robin Wright
-                                <span class="heading-subhead">Senior Marketing Major, Pre-Health</span>
-                            </h2>
-                            <p class="first-floater">
-
-                            </p>
-                        </div>
-                        <div class="wdn-col-two-fifths">
-                            <img class="second-floater" src="http://ucommmeranda.unl.edu/workspace/UNL_drupal_themes/explore_center/images/student_test.png" alt="Student test photo" />
-                        </div>
-                    </div>
+                    <?php print views_embed_view('random_student_story','block', $node->nid); ?>
                 </div>
             </div>
         </section>
@@ -148,22 +134,28 @@
     WDN.loadJQuery(function() {
         var ec = (function($) {
             var navBar = $('#page-navigation'), 
-            loadedWidth = navBar.width(), 
-            navBarTop = navBar.offset().top, 
-            navBarHeight = parseInt(navBar.height()),
-            navBarMarginTop = parseInt(navBar.css('marginTop')),
-            navBarMarginBottom = parseInt(navBar.css('marginBottom')), 
-            navBarOffset = navBarTop - navBarMarginTop,
-            overview = $('#overview');
+            loadedWidth, 
+            refTop, 
+            navBarHeight,
+            navBarMarginTop,
+            navBarMarginBottom, 
+            refOffset;
 
             return {
 
                 initialize : function () {
+                    // Inject an empty element before the nav to serve as our baseline & filler
+                    navBar.before('<div id="nav-bar-reference" class="wdn-band" />');
+                    refDiv = $('#nav-bar-reference');
+                    ec.calcDimensions();
+                    ec.setPosition();
+
                     // Bind the smooth scroll to the in-page nav
                     $('#slider-nav a').each(function () {
                         $(this).on('click', function (e) {
                             e.preventDefault();
-                            theLocation = $(this.hash).offset().top - navBarMarginTop -15;
+                            theLocation = $(this.hash).offset().top - (navBarHeight/2);
+                            WDN.log(theLocation);
 
                             $('html, body').animate({
                                 scrollTop: theLocation
@@ -179,14 +171,32 @@
                     
                     // Bind scrollbar so the in-page nav moves with the scroll
                     $(window).on('scroll', function () {
-                        if ($(window).scrollTop() >= navBarTop) {
-                            navBar.css({'position' : 'fixed', 'top' : (navBarMarginTop * -1) + 'px', 'width' : loadedWidth, 'margin-top': navBarMarginTop});
-                            overview.css({'margin-bottom' : navBarHeight + navBarMarginTop + navBarMarginBottom + 'px'}); // shim
-                        } else {
-                            navBar.css({'position' : 'initial', 'width' : 'auto', 'margin-top' : '2em'});
-                            overview.css({'margin-bottom' : 'auto'}); // shim
-                        }
+                        ec.setPosition();
                     });
+
+                    $(window).on('resize', function() {
+                        // Reset all the calculations to accomodate this resize
+                        ec.calcDimensions();
+                        ec.setPosition();
+                    });
+                },
+
+                calcDimensions : function () {
+                    loadedWidth = refDiv.width();
+                    navBarHeight = parseInt(navBar.outerHeight(true));
+                    navBarMarginTop = parseInt(navBar.css('marginTop'));
+                    refTop = refDiv.offset().top;
+                    refOffset = refTop + navBarMarginTop;
+                },
+
+                setPosition : function () {
+                    if ($(window).scrollTop() >= refOffset) {
+                        navBar.css({'position' : 'fixed', 'top' : (navBarMarginTop * -1) + 'px', 'width' : loadedWidth, 'margin-top': navBarMarginTop});
+                        refDiv.css({'margin-bottom' : navBarHeight + 'px'}); // shim
+                    } else {
+                        navBar.css({'position' : 'initial', 'width' : 'auto', 'margin-top' : '2em'});
+                        refDiv.css({'margin-bottom' : 'auto'}); // shim
+                    }
                 }
             }
 

@@ -1,7 +1,5 @@
 <?php 
-    foreach ($items as $item) :
-?>
-    <?php print render($item['#markup']); ?>
-<?php 
-    endforeach; 
+foreach ($items as $item) {
+    print render($item['#markup']);
+}
 ?>

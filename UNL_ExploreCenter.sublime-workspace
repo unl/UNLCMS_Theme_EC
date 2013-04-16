@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"cal",
+				"calcDimensions"
+			],
+			[
+				"navBa",
+				"navBarOffset"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
 				"d",
 				"display"
 			],
@@ -115,50 +135,7 @@
 			"file": "explore_center.less",
 			"settings":
 			{
-				"buffer_size": 4578,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "layouts.less",
-			"settings":
-			{
-				"buffer_size": 120,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "node--adviser--teaser.tpl.php",
-			"settings":
-			{
-				"buffer_size": 461,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "node--adviser--abbr-teaser.tpl.php",
-			"settings":
-			{
-				"buffer_size": 285,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "",
-			"file": "node--about.tpl.php",
-			"file_size": 22,
-			"file_write_time": 1364334456000000,
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "field--field-adviser-appointment-link.tpl.php",
-			"settings":
-			{
-				"buffer_size": 173,
+				"buffer_size": 8166,
 				"line_ending": "Unix"
 			}
 		},
@@ -166,15 +143,7 @@
 			"file": "mixins.less",
 			"settings":
 			{
-				"buffer_size": 580,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "template.php",
-			"settings":
-			{
-				"buffer_size": 1691,
+				"buffer_size": 571,
 				"line_ending": "Unix"
 			}
 		},
@@ -182,31 +151,23 @@
 			"file": "node--pre-professional-program--full.tpl.php",
 			"settings":
 			{
-				"buffer_size": 8590,
+				"buffer_size": 9350,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views-view--advisers.tpl.php",
+			"file": "node--layout-two-columns-column-block.tpl.php",
 			"settings":
 			{
-				"buffer_size": 70,
+				"buffer_size": 2612,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views-view--advisers--block.tpl.php",
+			"file": "field--field-program-checklist.tpl.php",
 			"settings":
 			{
-				"buffer_size": 116,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "--advisers.tpl.php",
-			"settings":
-			{
-				"buffer_size": 226,
+				"buffer_size": 209,
 				"line_ending": "Unix"
 			}
 		}
@@ -291,11 +252,42 @@
 	},
 	"file_history":
 	[
-		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/--advisers--block.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/template.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/field--field-middle-column-headline.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/field--field-left-column-headline.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/views-view--pre-health-programs.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/node--pre-professional-program--teaser.tpl.php",
+		"/Users/smeranda/Documents/Google Drive/Consulting/Kansas Wesleyan/analytics.js",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/node--about.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/node--pre-professional-program--full.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/views-view-unformatted--frequently-asked-questions.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/views-view-unformatted--advisers.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/node--faq.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/--frequently-asked-questions.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/node--faq--teaser.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/views-view--frequently-asked-questions.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/views-view--advisers.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/views-view--advisers--band-block.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/block--views--advisers-block-1.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/block--views--advisers-band-block.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/views-view-unformatted--advisers--band-block.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/views-view--advisers--block.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/layouts.less",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/node--adviser--teaser.tpl.php",
+		"/Users/smeranda/Documents/Google Drive/Consulting/Embry-Riddle/jQueryAnalyticsExtensions.js",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/node--adviser--abbr-teaser.tpl.php",
+		"/Users/smeranda/Documents/Google Drive/Consulting/UT Tyler/UT Tyler - Keywords Segmentation.md",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/field--field-program-checklist.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/views-view-unformatted--advisers--block.tpl.php",
+		"/Users/smeranda/Desktop/2013-03-28_Motions-Emails.txt",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/field--field-adviser-photo.tpl.php",
 		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/--advisers.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/mixins.less",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/field--field-adviser-appointment-link.tpl.php",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/explore_center.less",
+		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/--advisers--block.tpl.php",
 		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/field--field-adviser-title.tpl.php",
 		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/block--views--pre-professional-programs-block.tpl.php",
-		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/field--field-program-checklist.tpl.php",
 		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/field--field-student-photo.tpl.php",
 		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/README.md",
 		"/Users/smeranda/Documents/workspace/UNL_drupal_themes/explore_center/views-view-unformatted--pre-professional-programs.tpl.php",
@@ -322,7 +314,6 @@
 		"/Users/smeranda/Documents/workspace/UNL_Validator/www/css/images/n.svg",
 		"/Users/smeranda/Documents/workspace/UNL_Validator/Makefile",
 		"/Users/smeranda/Documents/workspace/UNL_Validator/www/js/lib/handlebars-1.0.0-rc3.js",
-		"/Users/smeranda/Documents/Google Drive/Consulting/Kansas Wesleyan/analytics.js",
 		"/Users/smeranda/Documents/workspace/UNL_Validator/www/js/lib/handlebars-1.0.0-rc.3.js",
 		"/Users/smeranda/Documents/workspace/UNL_Validator/www/templates/summary.handlebars",
 		"/Users/smeranda/Documents/Google Drive/Google Analytics/jQueryAnalyticsExtensions.js",
@@ -363,6 +354,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"navBarTop",
 			"navBarMargin",
 			"seperator",
 			"horizontal-seperator",
@@ -415,7 +407,6 @@
 	"groups":
 	[
 		{
-			"selected": 4,
 			"sheets":
 			[
 				{
@@ -423,47 +414,223 @@
 					"file": "explore_center.less",
 					"settings":
 					{
-						"buffer_size": 4578,
+						"buffer_size": 8166,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								723,
-								723
+								534,
+								534
 							]
 						],
 						"settings":
 						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
 							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 37.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "layouts.less",
+					"file": "mixins.less",
 					"settings":
 					{
-						"buffer_size": 120,
+						"buffer_size": 571,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								107,
-								107
+								242,
+								242
 							]
 						],
 						"settings":
 						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
 							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -474,44 +641,134 @@
 				},
 				{
 					"buffer": 2,
-					"file": "node--adviser--teaser.tpl.php",
+					"file": "node--pre-professional-program--full.tpl.php",
 					"settings":
 					{
-						"buffer_size": 461,
+						"buffer_size": 9350,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								461,
-								461
+								2970,
+								2970
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 537.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "node--adviser--abbr-teaser.tpl.php",
+					"file": "node--layout-two-columns-column-block.tpl.php",
 					"settings":
 					{
-						"buffer_size": 285,
+						"buffer_size": 2612,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								217,
-								217
+								1214,
+								1214
 							]
 						],
 						"settings":
@@ -520,217 +777,118 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 73.0,
+						"translation.y": 134.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "node--about.tpl.php",
+					"file": "field--field-program-checklist.tpl.php",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 209,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								38,
+								38
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "field--field-adviser-appointment-link.tpl.php",
-					"settings":
-					{
-						"buffer_size": 173,
-						"regions":
-						{
-						},
-						"selection":
-						[
+							"annotations":
 							[
-								67,
-								67
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "mixins.less",
-					"settings":
-					{
-						"buffer_size": 580,
-						"regions":
-						{
-						},
-						"selection":
-						[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
 							[
-								580,
-								580
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "template.php",
-					"settings":
-					{
-						"buffer_size": 1691,
-						"regions":
-						{
-						},
-						"selection":
-						[
+								110.0
+							],
+							"gjslint_options":
 							[
-								832,
-								832
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "node--pre-professional-program--full.tpl.php",
-					"settings":
-					{
-						"buffer_size": 8590,
-						"regions":
-						{
-						},
-						"selection":
-						[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
 							[
-								316,
-								261
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "views-view--advisers.tpl.php",
-					"settings":
-					{
-						"buffer_size": 70,
-						"regions":
-						{
-						},
-						"selection":
-						[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
 							[
-								0,
-								70
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "views-view--advisers--block.tpl.php",
-					"settings":
-					{
-						"buffer_size": 116,
-						"regions":
-						{
-						},
-						"selection":
-						[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
 							[
-								53,
-								53
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "--advisers.tpl.php",
-					"settings":
-					{
-						"buffer_size": 226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								226
-							]
-						],
-						"settings":
-						{
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,

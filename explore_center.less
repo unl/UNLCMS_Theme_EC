@@ -1,35 +1,21 @@
 @import "wdn_mixins/all";
 
 // Google Webfonts
-@import url(http://fonts.googleapis.com/css?family=Neuton:400,700|Oswald:400,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 @import "mixins";
 @import "layouts";
 
-/* -- Non-breakpoint states for columns - MOBILE FIRST
-------------------------------------------------------------- */
+// Breakpoint rules (follows WDN gridv3)
+@bp1: ~"min-width: 480px";
+@bp2: ~"min-width: 768px";
+@bp3: ~"min-width: 960px";
+@bp4: ~"min-width: 1040px";
 
-@media only screen and (@bp1) {
-    
-}
-
-/* -- Breakpoint 2 (.bp2)
-------------------------------------------------------------- */
-@media only screen and (@bp2) {
-    
-}
-
-/* -- Breakpoint 3 (.bp3)
-------------------------------------------------------------- */
-@media only screen and (@bp3) {
-    
-}
-
-/* -- Breakpoint 4 (.bp4)
-------------------------------------------------------------- */
-@media only screen and (@bp4) {
-    
-}
-
+@impactFont: Oswald, Helvetica, Arial, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+// Add all base (screen width doesn't matter) here
+ 
+ 
+// For all the media queries
 /* 
 *
 * Drupal Overrides
@@ -39,24 +25,12 @@
     padding: 0;
     box-shadow: none;
 }
+[class$='-decoration'] {
+    display: none;
+}
 
 #maincontent {
     .baseText();
-
-    .horiztontal-list {
-
-        .visual-island {
-            background: #e5e3d2;
-            border-radius: 3px;
-        }
-
-        a {
-            text-align: center;
-            display: block;
-            color: darken(#e5e3d2, 65%);
-            font-weight: bold;
-        }
-    }
 
     ul, ol {
         &[class*="wdn-grid-set"] {
@@ -108,7 +82,7 @@
             background-position: 20px 7px;
         }
         &.mini {
-            font-size: 0.6em;
+            font-size: 0.8em;
             line-height: 1;
             padding: 5px 10px;
             height: auto;
@@ -120,15 +94,29 @@
         }
     }
 
-    
+    .grouped-header {
+
+        .sub-task {
+            float: right;
+        }
+    }
+
+    .small {
+        font-size: 0.85em;
+        line-height: 1.1em;
+    }
 
     .bump-down { // Used to line up content in columns next to columns that begin with headings which have padding-top.
         margin-top: 25px;
     }
+
+    figure {
+        line-height: 0;
+    }
+
     .ec-frame {
         background-color: #f3f1e6;
         padding: 3px;
-        line-height: 0;
 
         img {
             border-radius: 2px;
@@ -143,7 +131,7 @@
     }
 
     .ec-heading {
-        line-height: 1;
+        line-height: 1.2;
         margin: 0.5em 0;
         padding: 0.2em 0;
 
@@ -165,6 +153,7 @@
         &.flag {
             padding: 0.5em 0 0.5em 60px;
             background: url(images/title-flag.png) top left no-repeat;
+            text-align: left;
         }
 
         &.reverse {
@@ -192,6 +181,11 @@
         margin-top: 2em;
         margin-bottom: 2em;
         padding: 1em 0;
+        top: 500px;
+    }
+
+    #nav-bar-reference {
+        padding: 0;
     }
 
     #slider-nav {
@@ -220,23 +214,43 @@
 
 #maincontent {
 
-    .student-story {
-        background-color: #f0fbf4;
+    .soothing-wrapper {
+        @color: #56b177;
+        background-color: fadeout(@color, 90%);
         padding: 1em;
         border-radius: 3px;
+
+        .button {
+            background-color: darken(@color, 10%);
+            .box-shadow(0, 3px, 0, fadeout(darken(@color, 30%), 25%));
+
+            &:hover {
+                background-color: darken(@color, 15%);
+            }
+        }
     }
-}
 
-/* 
-*
-* Advisers
-*
-*/
+    .creamy-wrapper {
+        @color: #f7f6ed;
+        background-color: @color;
+        color: darken(@color, 60%);
 
-#maincontent {
-    @color: #a7cee5;
+        .ec-heading {
+            color: darken(@color, 60%);
+        }
 
-    .soothing-wrapper {
+        .grouped-header {
+            line-height: 1;
+            border-bottom: 1px solid darken(@color, 10%);
+
+            .sub-task {
+                font-size: 0.75em;
+            }
+        }
+    }
+
+    .cool-wrapper {
+        @color: #a7cee5;
         background: fadeout(@color, 83%);
 
         .button {
@@ -248,15 +262,30 @@
             }
         }
     }
+}
+
+/* 
+*
+* Advisers
+*
+*/
+
+#maincontent {
+    .faded-wrapper {
+        @color: #f3f1e6;
+        background: fadeout(@color, 55%);
+    }
 
     .adviser-frame {
         .clear-fix();
 
         img {
-            border-radius: 50%;
             max-width: 100px;
             width: 100%;
-            border: 3px solid fadeout(#c1d3b2, 55%);
+            border-radius: 50%;
+            .box-shadow(0, 0, 0, 3px, fadeout(#c1d3b2, 55%));
+            // Use box-shadow to get around iOS border radius bug
+            line-height: 1;
         }
 
         figcaption {
@@ -266,7 +295,7 @@
 
     }
 
-    #academic-adviser-list {
+    #academic-advisers {
 
         h2 {
             font-size: 1.6em;
@@ -276,8 +305,6 @@
             @color: #a7cee5;
             margin: 0;
             //background-color: fadeout(lighten(@color, 15%), 15%);
-            position: relative;
-            z-index: 1;
             .box-sizing(border-box);
             color: darken(@color, 75%);
             font-size: 1.2em;
@@ -289,10 +316,14 @@
         }
 
         .views-row {
-            margin-bottom: 1em;
+            @color: #a7cee5;
+            padding-bottom: 0.75em;
+            margin-bottom: 0.75em;
+            border-bottom: 1px solid lighten(@color, 10%);
+            text-align: center;
         }
 
-        .soothing-wrapper {
+        .cool-wrapper {
             padding: 0.5rem 1rem 1rem; 
         }
 
@@ -300,4 +331,254 @@
 
         }
     }
+}
+
+/* 
+*
+* FAQ List
+*
+*/
+
+#maincontent {
+
+    .faq-list {
+
+        .question {
+            border-bottom: 2px dashed darken(#f3f1e6, 5%);
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: block;
+            .impactFont();
+        }
+
+        .answer {
+            background-color: lighten(#f3f1e6, 5%);
+            margin: 0.5em 1em;
+            padding: 0.5em 0.5em 0.5em 2em;
+            position: relative;
+
+            &:before {
+                content: "\2713";
+                background-color: #a7cee5;
+                position: absolute;
+                left: 0;
+                top: 1em;
+                line-height: 1;
+                padding: 0.25em;
+                color: lighten(#f3f1e6, 5%);
+            }
+        }
+    }
+}
+
+/* 
+*
+* Event List
+*
+*/
+
+#maincontent {
+
+    .date {
+        width: 55px;
+        float: left;
+        text-transform: uppercase;
+        line-height: 1;
+        font-family: @impactFont;
+
+        span {
+            display: block;
+        }
+
+        .month, .start-time {
+            font-size: 0.75em;
+        }
+
+        .day {
+            font-size: 2.25em;
+            font-weight: bold;
+        }
+    }
+
+    .event-details {
+        font-family: @impactFont;
+        margin-top: 0.5em;
+
+        * {
+            display: block;
+        }
+
+        .location {
+            margin-top: 0.5em;
+        }
+    }
+
+    .location {
+        color: #47881f;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.75em;
+    }
+
+    .event-listing {
+        margin: 0.5em 0;
+    }
+}
+
+/* 
+*
+* Compass Divider
+*
+*/
+
+#maincontent {
+    .compass {
+        position: relative;
+        padding: 1em 0 2em;
+        &:after {
+            content: '';
+            background-image: url(images/compass.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 75px;
+            width: 100%;
+            position: absolute;
+            bottom: -38px;
+        }
+
+        + .view {
+            padding-top: 2em;
+        }
+    }
+}
+
+#maincontent {
+
+    .visual-island {
+        background-color: lighten(#f3f1e6, 5%);
+        border: 3px solid fadeout(#f3f1e6, 15%);
+        border-radius: 3px;
+    }
+
+    .grid-layout { // layouts of boxes
+        .clear-fix();
+
+        * {
+            .box-sizing(border-box);
+        }
+
+        .first {
+            float: left;
+            width: 35%;
+        }
+
+        .second {
+            float: right;
+            width: 60%;
+        }
+    }
+}
+
+// 480px wide
+.bp1() {
+    .bp1-decoration {
+        display: block;
+    }
+
+    // Advanced grid adjustments
+    .bp1-wdn-grid-set-halves > .wdn-col{
+        &:nth-of-type(2n + 1) {
+            clear: left;
+        }
+    }
+}
+ 
+// 768px wide
+.bp2() {
+    .bp2-decoration {
+        display: block;
+    }
+    #maincontent {
+        #academic-advisers {
+            text-align: left;
+        }
+
+        .grid-layout { // layouts of boxes
+
+            .first {
+                float: none;
+                width: auto;
+            }
+
+            .second {
+                float: none;
+                width: auto;
+            }
+        }
+    }
+
+    // Advanced grid adjustments
+    .bp1-wdn-grid-set-halves > .wdn-col{
+        &:nth-of-type(2n + 1) {
+            clear: none;
+        }
+    }
+}
+ 
+// 960px wide
+.bp3() {
+    .bp3-decoration {
+        display: block;
+    }
+    #maincontent {
+        
+        h3.ec-heading {
+
+            &.small {
+                font-size: 1.1em;
+            }
+        }
+    }
+    
+    .event-listing {
+
+        &:nth-child(2) {
+            padding-right: 3em;
+        }
+
+        &:nth-child(3) {
+            padding-left: 3em;
+        }
+    }
+}
+ 
+// 1040px wide
+.bp4() {
+    .bp4-decoration {
+        display: block;
+    }
+}
+
+
+// This is what's outputed in the media queries
+@media only screen and (@bp1) {
+    .bp1();
+}
+@media only screen and (@bp2) {
+    .bp2();
+}
+@media only screen and (@bp3) {
+    .bp3();
+}
+@media only screen and (@bp4) {
+    .bp4();
+}
+ 
+// Output the media queries without the media queries for IE7 & IE8
+ie7, .ie8 {
+    .bp1();
+    .bp2();
+    .bp3();
+    .bp4();
 }

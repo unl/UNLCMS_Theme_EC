@@ -1,32 +1,86 @@
-@import url(http://fonts.googleapis.com/css?family=Neuton:400,700|Oswald:400,700);
-#maincontent .wdn-band{margin:0 -12px;}
-#maincontent .wdn-inner-wrapper{padding:0 12px;}
-@media only screen and (min-width: 480px){}@media only screen and (min-width: 768px){}@media only screen and (min-width: 960px){}@media only screen and (min-width: 1040px){}.block-views{padding:0;box-shadow:none;}
-#maincontent{color:#535353;font-family:'Neuton',Georgia,'Bitstream Charter','Century Schoolbook L','Liberation Serif',Times,serif;font-size:16px;line-height:1.6;color:#787878;}#maincontent .horiztontal-list .visual-island{background:#e5e3d2;border-radius:3px;}
-#maincontent .horiztontal-list a{text-align:center;display:block;color:#444127;font-weight:bold;}
-#maincontent ul[class*="wdn-grid-set"],#maincontent ol[class*="wdn-grid-set"]{padding-left:0;list-style:none;}
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+.front #pagetitle{display:none;}
+.front.logged-in #pagetitle{display:block;visibility:hidden;}
+@media only screen and (min-width: 480px){.bp1-decoration{display:block;} .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1){clear:left;}}@media only screen and (min-width: 768px){.bp2-decoration{display:block;} #maincontent #academic-advisers{text-align:left;} #maincontent .grid-layout .first{float:none;width:auto;} #maincontent .grid-layout .second{float:none;width:auto;} .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1){clear:none;}}@media only screen and (min-width: 960px){#maincontent .wdn-band{margin:0 -9px;padding:9px 0;} #maincontent .wdn-inner-wrapper{padding:0 9px;} .bp3-decoration{display:block;} #maincontent h3.ec-heading.small{font-size:1.1em;} .event-listing:nth-child(2){padding-right:3em;} .event-listing:nth-child(3){padding-left:3em;}}@media only screen and (min-width: 1040px){#maincontent .wdn-band{margin:0 -12px;padding:12px 0;} #maincontent .wdn-inner-wrapper{padding:0 12px;} .bp4-decoration{display:block;}}ie7 .bp1-decoration,.ie8 .bp1-decoration{display:block;}
+ie7 .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1),.ie8 .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1){clear:left;}
+ie7 .bp2-decoration,.ie8 .bp2-decoration{display:block;}
+ie7 #maincontent #academic-advisers,.ie8 #maincontent #academic-advisers{text-align:left;}
+ie7 #maincontent .grid-layout .first,.ie8 #maincontent .grid-layout .first{float:none;width:auto;}
+ie7 #maincontent .grid-layout .second,.ie8 #maincontent .grid-layout .second{float:none;width:auto;}
+ie7 .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1),.ie8 .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1){clear:none;}
+ie7 #maincontent .wdn-band,.ie8 #maincontent .wdn-band{margin:0 -9px;padding:9px 0;}
+ie7 #maincontent .wdn-inner-wrapper,.ie8 #maincontent .wdn-inner-wrapper{padding:0 9px;}
+ie7 .bp3-decoration,.ie8 .bp3-decoration{display:block;}
+ie7 #maincontent h3.ec-heading.small,.ie8 #maincontent h3.ec-heading.small{font-size:1.1em;}
+ie7 .event-listing:nth-child(2),.ie8 .event-listing:nth-child(2){padding-right:3em;}
+ie7 .event-listing:nth-child(3),.ie8 .event-listing:nth-child(3){padding-left:3em;}
+ie7 #maincontent .wdn-band,.ie8 #maincontent .wdn-band{margin:0 -12px;padding:12px 0;}
+ie7 #maincontent .wdn-inner-wrapper,.ie8 #maincontent .wdn-inner-wrapper{padding:0 12px;}
+ie7 .bp4-decoration,.ie8 .bp4-decoration{display:block;}
+.block-views{padding:0;box-shadow:none;}
+[class$='-decoration']{display:none;}
+#maincontent{color:#535353;font-family:Georgia,'Bitstream Charter','Century Schoolbook L','Liberation Serif',Times,serif;font-size:14px;line-height:1.7;color:#787878;}#maincontent ul[class*="wdn-grid-set"],#maincontent ol[class*="wdn-grid-set"]{padding-left:0;list-style:none;}
 #maincontent .horizontal-separator{background:url(images/horizontal-separator.png) center bottom no-repeat;padding-bottom:70px;margin-bottom:40px;}
 #maincontent .center{text-align:center;}
 #maincontent .button{font-size:1em;background-color:#806c53;border-radius:40px;box-shadow:0 3px 0 rgba(188, 171, 151, 0.75);-webkit-box-shadow:0 3px 0 rgba(188, 171, 151, 0.75);color:#fff;padding:0 25px;line-height:40px;display:inline-block;text-align:center;font-family:"Lucida Grande",Verdana,Arial,sans-serif;}#maincontent .button:hover{background-color:#715f49;color:#fff;}
 #maincontent .button:after{display:none;}
 #maincontent .button.document{padding:0 25px 0 45px;margin-top:5em;background-image:url(images/document.svg);background-repeat:no-repeat;background-size:20px;background-position:20px 7px;}
-#maincontent .button.mini{font-size:0.6em;line-height:1;padding:5px 10px;height:auto;display:inline-block;}
+#maincontent .button.mini{font-size:0.8em;line-height:1;padding:5px 10px;height:auto;display:inline-block;}
 #maincontent .button.width-control{max-width:275px;}
+#maincontent .grouped-header .sub-task{float:right;}
+#maincontent .small{font-size:0.85em;line-height:1.1em;}
 #maincontent .bump-down{margin-top:25px;}
-#maincontent .ec-frame{background-color:#f3f1e6;padding:3px;line-height:0;}#maincontent .ec-frame img{border-radius:2px;}
+#maincontent figure{line-height:0;}
+#maincontent .ec-frame{background-color:#f3f1e6;padding:3px;}#maincontent .ec-frame img{border-radius:2px;}
 #maincontent .ec-frame figcaption,#maincontent .ec-frame .caption{line-height:1.5em;font-style:italic;font-size:0.75em;color:#716836;}
-#maincontent .ec-heading{line-height:1;margin:0.5em 0;padding:0.2em 0;}#maincontent .ec-heading span{display:block;text-transform:uppercase;font-weight:normal;color:#868686;font-size:0.5em;font-family:'Neuton',Georgia,'Bitstream Charter','Century Schoolbook L','Liberation Serif',Times,serif;}#maincontent .ec-heading span.heading-subhead{text-transform:none;font-size:0.4em;font-weight:normal;}
-#maincontent .ec-heading.flag{padding:0.5em 0 0.5em 60px;background:url(images/title-flag.png) top left no-repeat;}
+#maincontent .ec-heading{line-height:1.2;margin:0.5em 0;padding:0.2em 0;}#maincontent .ec-heading span{display:block;text-transform:uppercase;font-weight:normal;color:#868686;font-size:0.5em;font-family:Georgia,'Bitstream Charter','Century Schoolbook L','Liberation Serif',Times,serif;}#maincontent .ec-heading span.heading-subhead{text-transform:none;font-size:0.4em;font-weight:normal;}
+#maincontent .ec-heading.flag{padding:0.5em 0 0.5em 60px;background:url(images/title-flag.png) top left no-repeat;text-align:left;}
 #maincontent .ec-heading.reverse{text-align:right;}#maincontent .ec-heading.reverse.flag{background:url(images/title-flag-reverse.png) top right no-repeat;padding:0.5em 60px 0.5em 0;}
-#maincontent #page-navigation{text-align:center;background-color:#f3f1e6;margin-top:2em;margin-bottom:2em;padding:1em 0;}
+#maincontent #page-navigation{text-align:center;background-color:#f3f1e6;margin-top:2em;margin-bottom:2em;padding:1em 0;top:500px;}
+#maincontent #nav-bar-reference{padding:0;}
 #maincontent #slider-nav{list-style:none;padding:0;font-family:'Oswald',Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;font-size:0.85em;}#maincontent #slider-nav li{display:inline-block;padding:0 1.25em;text-transform:uppercase;}
 #maincontent #slider-nav a{color:#82783e;}
-#maincontent .student-story{background-color:#f0fbf4;padding:1em;border-radius:3px;}
-#maincontent .soothing-wrapper{background:rgba(167, 206, 229, 0.17000000000000004);}#maincontent .soothing-wrapper .button{background-color:#2c6d94;box-shadow:0 3px 0 rgba(88, 162, 206, 0.75);-webkit-box-shadow:0 3px 0 rgba(88, 162, 206, 0.75);}#maincontent .soothing-wrapper .button:hover{background-color:#265f81;}
+#maincontent .soothing-wrapper{background-color:rgba(86, 177, 119, 0.09999999999999998);padding:1em;border-radius:3px;}#maincontent .soothing-wrapper .button{background-color:#43915f;box-shadow:0 3px 0 rgba(35, 75, 49, 0.75);-webkit-box-shadow:0 3px 0 rgba(35, 75, 49, 0.75);}#maincontent .soothing-wrapper .button:hover{background-color:#3b8054;}
+#maincontent .creamy-wrapper{background-color:#f7f6ed;color:#7b7437;}#maincontent .creamy-wrapper .ec-heading{color:#7b7437;}
+#maincontent .creamy-wrapper .grouped-header{line-height:1;border-bottom:1px solid #e7e4ca;}#maincontent .creamy-wrapper .grouped-header .sub-task{font-size:0.75em;}
+#maincontent .cool-wrapper{background:rgba(167, 206, 229, 0.17000000000000004);}#maincontent .cool-wrapper .button{background-color:#2c6d94;box-shadow:0 3px 0 rgba(88, 162, 206, 0.75);-webkit-box-shadow:0 3px 0 rgba(88, 162, 206, 0.75);}#maincontent .cool-wrapper .button:hover{background-color:#265f81;}
+#maincontent .faded-wrapper{background:rgba(243, 241, 230, 0.44999999999999996);}
 #maincontent .adviser-frame:after{content:"";display:table;clear:both;}
-#maincontent .adviser-frame img{border-radius:50%;max-width:100px;width:100%;border:3px solid rgba(193, 211, 178, 0.44999999999999996);}
+#maincontent .adviser-frame img{max-width:100px;width:100%;border-radius:50%;box-shadow:0 0 0 3px rgba(193, 211, 178, 0.44999999999999996);-webkit-box-shadow:0 0 0 3px rgba(193, 211, 178, 0.44999999999999996);line-height:1;}
 #maincontent .adviser-frame figcaption{display:none;}
-#maincontent #academic-adviser-list h2{font-size:1.6em;}
-#maincontent #academic-adviser-list .ec-heading:not(.flag){margin:0;position:relative;z-index:1;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;color:#03080a;font-size:1.2em;padding:0.25em;}#maincontent #academic-adviser-list .ec-heading:not(.flag) span{font-size:0.7em;}
-#maincontent #academic-adviser-list .views-row{margin-bottom:1em;}
-#maincontent #academic-adviser-list .soothing-wrapper{padding:0.5rem 1rem 1rem;}
+#maincontent #academic-advisers h2{font-size:1.6em;}
+#maincontent #academic-advisers .ec-heading:not(.flag){margin:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;color:#03080a;font-size:1.2em;padding:0.25em;}#maincontent #academic-advisers .ec-heading:not(.flag) span{font-size:0.7em;}
+#maincontent #academic-advisers .views-row{padding-bottom:0.75em;margin-bottom:0.75em;border-bottom:1px solid #cee4f1;text-align:center;}
+#maincontent #academic-advisers .cool-wrapper{padding:0.5rem 1rem 1rem;}
+#maincontent .faq-list .question{border-bottom:2px dashed #ebe7d5;font-size:1.2em;font-weight:bold;text-transform:uppercase;display:block;font-family:'Oswald',Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;}
+#maincontent .faq-list .answer{background-color:#fbfbf7;margin:0.5em 1em;padding:0.5em 0.5em 0.5em 2em;position:relative;}#maincontent .faq-list .answer:before{content:"\2713";background-color:#a7cee5;position:absolute;left:0;top:1em;line-height:1;padding:0.25em;color:#fbfbf7;}
+#maincontent .date{width:55px;float:left;text-transform:uppercase;line-height:1;font-family:Oswald,Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;}#maincontent .date span{display:block;}
+#maincontent .date .month,#maincontent .date .start-time{font-size:0.75em;}
+#maincontent .date .day{font-size:2.25em;font-weight:bold;}
+#maincontent .event-details{font-family:Oswald,Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;margin-top:0.5em;}#maincontent .event-details *{display:block;}
+#maincontent .event-details .location{margin-top:0.5em;}
+#maincontent .location{color:#47881f;text-transform:uppercase;font-weight:bold;font-size:0.75em;}
+#maincontent .event-listing{margin:0.5em 0;}
+#maincontent .compass{position:relative;padding:1em 0 2em;}#maincontent .compass:after{content:'';background-image:url(images/compass.png);background-repeat:no-repeat;background-position:center;height:75px;width:100%;position:absolute;bottom:-38px;}
+#maincontent .compass+.view{padding-top:2em;}
+#maincontent .visual-island{background-color:#fbfbf7;border:3px solid rgba(243, 241, 230, 0.85);border-radius:3px;}
+#maincontent .grid-layout:after{content:"";display:table;clear:both;}
+#maincontent .grid-layout *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+#maincontent .grid-layout .first{float:left;width:35%;}
+#maincontent .grid-layout .second{float:right;width:60%;}
+@media only screen and (min-width: 480px){.bp1-decoration{display:block;} .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1){clear:left;}}@media only screen and (min-width: 768px){.bp2-decoration{display:block;} #maincontent #academic-advisers{text-align:left;} #maincontent .grid-layout .first{float:none;width:auto;} #maincontent .grid-layout .second{float:none;width:auto;} .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1){clear:none;}}@media only screen and (min-width: 960px){#maincontent .wdn-band{margin:0 -9px;padding:9px 0;} #maincontent .wdn-inner-wrapper{padding:0 9px;} .bp3-decoration{display:block;} #maincontent h3.ec-heading.small{font-size:1.1em;} .event-listing:nth-child(2){padding-right:3em;} .event-listing:nth-child(3){padding-left:3em;}}@media only screen and (min-width: 1040px){#maincontent .wdn-band{margin:0 -12px;padding:12px 0;} #maincontent .wdn-inner-wrapper{padding:0 12px;} .bp4-decoration{display:block;}}ie7 .bp1-decoration,.ie8 .bp1-decoration{display:block;}
+ie7 .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1),.ie8 .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1){clear:left;}
+ie7 .bp2-decoration,.ie8 .bp2-decoration{display:block;}
+ie7 #maincontent #academic-advisers,.ie8 #maincontent #academic-advisers{text-align:left;}
+ie7 #maincontent .grid-layout .first,.ie8 #maincontent .grid-layout .first{float:none;width:auto;}
+ie7 #maincontent .grid-layout .second,.ie8 #maincontent .grid-layout .second{float:none;width:auto;}
+ie7 .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1),.ie8 .bp1-wdn-grid-set-halves>.wdn-col:nth-of-type(2n + 1){clear:none;}
+ie7 #maincontent .wdn-band,.ie8 #maincontent .wdn-band{margin:0 -9px;padding:9px 0;}
+ie7 #maincontent .wdn-inner-wrapper,.ie8 #maincontent .wdn-inner-wrapper{padding:0 9px;}
+ie7 .bp3-decoration,.ie8 .bp3-decoration{display:block;}
+ie7 #maincontent h3.ec-heading.small,.ie8 #maincontent h3.ec-heading.small{font-size:1.1em;}
+ie7 .event-listing:nth-child(2),.ie8 .event-listing:nth-child(2){padding-right:3em;}
+ie7 .event-listing:nth-child(3),.ie8 .event-listing:nth-child(3){padding-left:3em;}
+ie7 #maincontent .wdn-band,.ie8 #maincontent .wdn-band{margin:0 -12px;padding:12px 0;}
+ie7 #maincontent .wdn-inner-wrapper,.ie8 #maincontent .wdn-inner-wrapper{padding:0 12px;}
+ie7 .bp4-decoration,.ie8 .bp4-decoration{display:block;}

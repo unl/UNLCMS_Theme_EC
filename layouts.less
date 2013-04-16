@@ -1,9 +1,58 @@
-#maincontent {
-    .wdn-band {
-        margin: 0 -12px;
-    }
+/* This hides the #pagetitle for all users */
+.front #pagetitle {
+    display: none;
+}
 
-    .wdn-inner-wrapper {
-        padding: 0 12px;
+/* This will show the region for logged-in users in order to use the view/edit/revision tabs. */
+.front.logged-in #pagetitle {
+    display: block;
+    visibility: hidden;
+}
+
+.bp3() {
+    #maincontent {
+        .wdn-band {
+            margin: 0 -9px;
+            padding: 9px 0;
+        }
+
+        .wdn-inner-wrapper {
+            padding: 0 9px;
+        }
     }
+}
+
+.bp4() {
+    #maincontent {
+        .wdn-band {
+            margin: 0 -12px;
+            padding: 12px 0;
+        }
+
+        .wdn-inner-wrapper {
+            padding: 0 12px;
+        }
+    }
+}
+
+// This is what's outputed in the media queries
+@media only screen and (@bp1) {
+    .bp1();
+}
+@media only screen and (@bp2) {
+    .bp2();
+}
+@media only screen and (@bp3) {
+    .bp3();
+}
+@media only screen and (@bp4) {
+    .bp4();
+}
+ 
+// Output the media queries without the media queries for IE7 & IE8
+ie7, .ie8 {
+    .bp1();
+    .bp2();
+    .bp3();
+    .bp4();
 }

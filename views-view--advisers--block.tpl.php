@@ -1,1 +1,1 @@
-<?php print_r($rows); ?>
+<?php print ($rows); ?>
