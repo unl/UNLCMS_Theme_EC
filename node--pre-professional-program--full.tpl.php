@@ -4,7 +4,7 @@
 ?>
 <div class="wdn-band" id="overview">
     <div class="wdn-inner-wrapper">
-        <section id="overview" class="bp2-wdn-grid-set-halves">
+        <section class="bp2-wdn-grid-set-halves">
             <div class="wdn-col bump-down">
                 <figure>
                     <?php print render($content['field_program_photo']); ?>
