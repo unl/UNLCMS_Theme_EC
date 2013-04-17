@@ -102,18 +102,24 @@
                     Professional Degrees <?php // The field name is different, so just hard code for now ?>
                 </h2>
             </div>
+        <?php if (isset($content['field_professional_degrees_intro'])) : ?>
             <div class="bp2-wdn-col-two-sevenths">
                 <?php print render($content['field_professional_degrees_intro']); ?>
             </div>
             <div class="bp2-wdn-col-three-sevenths">
                 <?php print render($content['field_professional_degrees']); ?>
             </div>
+        <?php else: ?>
+        <div class="bp2-wdn-col-five-sevenths">
+            <?php print render($content['field_professional_degrees']); ?>
+        </div>
             <div class="bp2-wdn-col-two-sevenths">
                 <h3>
                     <?php print $content['field_professional_schools']["#title"]; ?>
                 </h3>
                 <?php print render($content['field_professional_schools']); ?>
             </div>
+        <?php endif; ?>
         </section>
     </div>
 </div>
