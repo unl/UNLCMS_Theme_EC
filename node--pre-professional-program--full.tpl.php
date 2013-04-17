@@ -12,7 +12,7 @@
             </div>
             <div class="wdn-col">
                 <h2 class="ec-heading">
-                    <span><?php print $content['field_overview']["#object"]->title; ?></span>
+                    <span><?php print $title; ?></span>
                     <?php print $content['field_overview']["#title"]; ?>
                 </h2>
                 <?php print render($content['field_overview']); ?>
@@ -44,7 +44,7 @@
 <div class="wdn-band">
     <section class="wdn-inner-wrapper horizontal-separator" id="coursework">
         <h2 class="ec-heading flag">
-            <span><?php print $content['field_coursework']["#object"]->title; ?></span>
+            <span><?php print $title; ?></span>
             <?php print $content['field_coursework']["#title"]; ?>
         </h2>
         <div class="bp2-wdn-grid-set-halves">
@@ -67,7 +67,7 @@
             </div>
             <div class="bp2-wdn-col-two-thirds">
                 <h2 class="ec-heading flag reverse">
-                    <span><?php print $content['field_application_information']["#object"]->title; ?></span>
+                    <span><?php print $title; ?></span>
                     <?php print $content['field_application_information']["#title"]; ?>
                 </h2>
                 <?php print render($content['field_application_information']); ?>
@@ -80,7 +80,7 @@
         <section class="bp2-wdn-grid-set-halves">
             <div class="wdn-col">
                 <h2 class="ec-heading flag">
-                    <span><?php print $content['field_entrance_exams']["#object"]->title; ?></span>
+                    <span><?php print $title; ?></span>
                     <?php print $content['field_entrance_exams']["#title"]; ?>
                 </h2>
                 <?php print render($content['field_entrance_exams']); ?>
@@ -98,7 +98,7 @@
         <section class="wdn-grid-set">
             <div class="wdn-col-full">
                 <h2 class="ec-heading">
-                    <span><?php print $content['field_professional_degrees_intro']["#object"]->title; ?></span>
+                    <span><?php print $title; ?></span>
                     Professional Degrees <?php // The field name is different, so just hard code for now ?>
                 </h2>
             </div>
@@ -128,7 +128,7 @@
         <section class="wdn-grid-set">
             <div class="wdn-col-full">
                 <h2 class="ec-heading flag">
-                    <span><?php print $content['field_additional_resources']["#object"]->title; ?></span>
+                    <span><?php print $title; ?></span>
                     <?php print $content['field_additional_resources']["#title"]; ?>
                 </h2>
                 <?php print render($content['field_additional_resources']); ?>
