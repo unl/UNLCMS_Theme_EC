@@ -4,4 +4,4 @@
             <?php print $rows; ?>
         </ul>
     </div>
-</div>
+</section>
