@@ -14,6 +14,7 @@
             margin-left: -4px;
             padding-top: 4px;
             padding-bottom: 4px;
+            .clear-fix();
     }
 
     .wdn-inner-wrapper {
@@ -37,10 +38,10 @@
         }
     }
     .csscolumns &  {
-        .wdn-two-columns {
+        .wdn-two-flow-columns {
             .columns(2);
 
-            &.wdn-columns-avoid-break > li {
+            &.wdn-flow-columns-avoid-break > li {
                 width: 100%;
                 -webkit-column-break-inside: avoid;
                 -moz-column-break-inside: avoid;
