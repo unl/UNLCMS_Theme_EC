@@ -26,13 +26,13 @@
              <div class="event-details small">
              <a href="' .  $event->WebPages[0]->WebPage[0]->URL .'">'
              . $event->EventTitle . 
-             '</a>
-             </div>';
-        if (isset($location)) {
-            echo '<span class="location">'
-                 . $location .
-                 '</span>';
-        }
+             '</a>';
+            if (isset($location)) {
+                echo '<span class="location">'
+                     . $location .
+                     '</span>';
+            }
+            echo '</div>';
         echo '</li>';
     }
 ?>
