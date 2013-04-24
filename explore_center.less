@@ -51,7 +51,7 @@
 
 
     .button {
-        @buttonColor: #806c53;
+        @buttonColor: #2c6d94;
         color: #fff;
         font-size: 1em;
         background-color: @buttonColor;
@@ -174,10 +174,11 @@
 */
 
 #maincontent {
+    @navColor: #a7cee5;
 
     #page-navigation {
         text-align: center;
-        background-color: #f3f1e6;
+        background: fadeout(@navColor, 83%);
         margin-top: 2em;
         margin-bottom: 2em;
         padding: 1em 0;
@@ -192,7 +193,7 @@
         list-style: none;
         padding: 0;
         .impactFont();
-        font-size: 0.85em;
+        font-size: 0.95em;
 
         li {
             display: inline-block;
@@ -201,7 +202,8 @@
         }
 
         a {
-            color: darken(#f3f1e6, 55%);
+            color: darken(@navColor, 55%);
+            text-shadow: 0 1px 0 lighten(@navColor, 12%);
         }
     }
 }
@@ -325,10 +327,6 @@
 
         .cool-wrapper {
             padding: 0.5rem 1rem 1rem; 
-        }
-
-        .button {
-
         }
     }
 }
