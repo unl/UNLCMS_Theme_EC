@@ -1,5 +1,5 @@
  <div class="soothing-wrapper">
-    <section id="node-<?php print $node->nid; ?><?php print ($view_mode != 'full' ? '-teaser' : ''); ?>" class="wdn-grid-set">
+    <section id="node-<?php print $node->nid; ?><?php print ($view_mode != 'full' ? '-teaser' : ''); ?>" class="wdn-grid-set student-story-teaser">
         <div class="wdn-col-three-fifths">
             <h2 class="ec-heading">
                 <span>Student Success</span>
