@@ -49,6 +49,10 @@
         text-align: center;
     }
 
+    .summary {
+        font-size: 1.6em;
+        font-style: italic;
+    }
 
     .button {
         @buttonColor: #2c6d94;
@@ -165,6 +169,34 @@
             }
         }
     }
+
+    .wdn-pull-quote {
+        font-size: 1.6em;
+        font-family: @impactFont;
+        line-height: 1.5em;
+        padding: 0 0 0 2.5em;
+        quotes: "\201C" "\201D";
+        position: relative;
+        font-style: italic;
+        font-weight: bold;
+        margin-top: 75px;
+
+        &:before {
+            content: open-quote;
+            font-size:400%;
+            font-family: serif;
+            position: absolute;
+            top: 0.3em;
+            left: -0.03em;
+            opacity: 0.2;
+            font-style: normal;
+        }
+
+        &.soothing {
+            border-top: 10px solid fadeout(#56b177, 55%);
+            padding-top: 20px;
+        }
+    }
 }
 
 /* 
@@ -278,25 +310,6 @@
         background: fadeout(@color, 55%);
     }
 
-    .adviser-frame {
-        .clear-fix();
-
-        img {
-            max-width: 100px;
-            width: 100%;
-            border-radius: 50%;
-            .box-shadow(0, 0, 0, 3px, fadeout(#c1d3b2, 55%));
-            // Use box-shadow to get around iOS border radius bug
-            line-height: 1;
-        }
-
-        figcaption {
-
-            display: none;
-        }
-
-    }
-
     #academic-advisers {
 
         h2 {
@@ -327,6 +340,48 @@
 
         .cool-wrapper {
             padding: 0.5rem 1rem 1rem; 
+        }
+    }
+}
+
+/* 
+*
+* Photo Frames
+*
+*/
+
+#maincontent {
+
+
+    .round-frame {
+        .clear-fix();
+        text-align: center;
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+            .box-shadow(0, 0, 0, 3px, fadeout(#56b177, 55%));
+            // Use box-shadow to get around iOS border radius bug
+            line-height: 1;
+        }
+
+        figcaption {
+            display: none;
+        }
+
+        &.cool {
+
+            img {
+                .box-shadow(0, 0, 0, 3px, fadeout(#c1d3b2, 55%));
+            }
+        }
+
+        &.large {
+
+            img {
+                width: 80%;
+                .box-shadow(0, 0, 0, 10px, fadeout(#56b177, 55%));
+            }
         }
     }
 }
