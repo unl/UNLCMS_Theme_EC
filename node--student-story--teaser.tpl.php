@@ -6,7 +6,7 @@
                 <?php print $title; ?>
                 <span class="heading-subhead"><?php print render($content['field_sub_heading']); ?></span>
             </h2>
-            <?php print render($content['body']); ?>
+            <?php print render($content['field_pull_quote']); ?>
             <?php print render($content['path']); ?>
             <a class="button mini" href="<?php print $node_url; ?>">Continue reading <?php print $title; ?>'s story</a>
         </div>
