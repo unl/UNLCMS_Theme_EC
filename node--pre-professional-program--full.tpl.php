@@ -29,9 +29,9 @@
             <li>
                 <a href="<?php echo(request_path()); ?>#coursework"><?php print $content['field_coursework']["#title"]; ?></a>
             </li>
-            <?php if (isset($content['field_application_information'])) : ?>
+            <?php if (isset($content['field_professional_degrees'])) : ?>
             <li>
-                <a href="<?php echo(request_path()); ?>#application-info"><?php print $content['field_application_information']["#title"]; ?></a>
+                <a href="<?php echo(request_path()); ?>#professional-degrees">Professional Degrees</a>
             </li>
             <?php endif; ?>
             <?php if (isset($content['field_entrance_exams'])) : ?>
@@ -39,9 +39,9 @@
                 <a href="<?php echo(request_path()); ?>#entrance-exams"><?php print $content['field_entrance_exams']["#title"]; ?></a>
             </li>
             <?php endif; ?>
-            <?php if (isset($content['field_professional_degrees'])) : ?>
+            <?php if (isset($content['field_application_information'])) : ?>
             <li>
-                <a href="<?php echo(request_path()); ?>#professional-degrees">Professional Degrees</a>
+                <a href="<?php echo(request_path()); ?>#application-info"><?php print $content['field_application_information']["#title"]; ?></a>
             </li>
             <?php endif; ?>
             <?php if (isset($content['field_additional_resources'])) : ?>
@@ -63,43 +63,67 @@
                 <?php print render($content['field_coursework']); ?>
             </div>
             <div class="bp2-wdn-col-four-sevenths">
+                <aside class="student-story">
+                    <?php print views_embed_view('random_student_story','block', $node->nid); ?>
+                </aside>
+            </div>
+        </div>
+    </section>
+</div>
+<?php if (isset($content['field_professional_degrees'])) : ?>
+<div class="wdn-band">
+    <section class="wdn-inner-wrapper horizontal-separator" id="professional-degrees">
+        <div class="wdn-grid-set">
+            <div class="bp2-wdn-col-two-sevenths">
                 <h2 class="ec-heading">
                     <span><?php print $title; ?></span>
                     Professional Degrees <?php // The field name is different, so just hard code for now ?>
                 </h2>
+            </div>
+            <div class="bp2-wdn-col-five-sevenths wdn-two-flow-columns">
                 <?php print render($content['field_professional_degrees']); ?>
             </div>
         </div>
     </section>
 </div>
+<?php endif; ?>
+<?php if (isset($content['field_entrance_exams'])) : ?>
 <div class="wdn-band">
     <div class="wdn-inner-wrapper horizontal-separator">
-        <section id="application-info" class="bp2-wdn-grid-set-halves">
+        <section class="wdn-grid-set" id="entrance-exams">
             <div class="wdn-col">
-                <?php if (isset($content['field_entrance_exams'])) : ?>
                 <h2 class="ec-heading">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_entrance_exams']["#title"]; ?>
                 </h2>
-                <?php print render($content['field_entrance_exams']); ?>
-                <?php endif; ?>
-                <aside class="student-story">
-                    <?php print views_embed_view('random_student_story','block', $node->nid); ?>
-                </aside>
-            </div>
-            <div class="wdn-col">
-                <h2 class="ec-heading flag">
-                    <span><?php print $title; ?></span>
-                    <?php print $content['field_application_information']["#title"]; ?>
-                </h2>
-                <?php print render($content['field_application_information']); ?>
+                <div class="wdn-two-flow-columns">
+                    <?php print render($content['field_entrance_exams']); ?>
+                </div>
             </div>
         </section>
     </div>
 </div>
+<?php endif; ?>
+<?php if (isset($content['field_application_information'])) : ?>
 <div class="wdn-band">
-    <div class="wdn-inner-wrapper" id="additional-resources">
-        <section class="bp2-wdn-grid-set-halves">
+    <div class="wdn-inner-wrapper horizontal-separator">
+        <section class="wdn-grid-set" id="application-info">
+            <div class="wdn-col-full">
+                <h2 class="ec-heading flag reverse">
+                    <span><?php print $title; ?></span>
+                    <?php print $content['field_application_information']["#title"]; ?>
+                </h2>
+                <div class="wdn-two-flow-columns">
+                    <?php print render($content['field_application_information']); ?>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<?php endif; ?>
+<div class="wdn-band">
+    <div class="wdn-inner-wrapper">
+        <section class="bp2-wdn-grid-set-halves" id="additional-resources">
             <div class="wdn-col-full">
                 <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
