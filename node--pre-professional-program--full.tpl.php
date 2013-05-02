@@ -55,18 +55,32 @@
 <div class="wdn-band">
     <section class="wdn-inner-wrapper horizontal-separator" id="coursework">
         <div class="wdn-grid-set">
-            <div class="bp2-wdn-col-three-sevenths">
-                <h2 class="ec-heading flag">
-                    <span><?php print $title; ?></span>
-                    <?php print $content['field_coursework']["#title"]; ?>
-                </h2>
-                <?php print render($content['field_coursework']); ?>
-            </div>
-            <div class="bp2-wdn-col-four-sevenths">
-                <aside class="student-story">
-                    <?php print views_embed_view('random_student_story','block', $node->nid); ?>
-                </aside>
-            </div>
+            <?php if (isset($content['field_entrance_exams'])) : ?>
+                <div class="wdn-grid-set">
+                    <div class="bp2-wdn-col-two-sevenths">
+                        <h2 class="ec-heading flag">
+                            <span><?php print $title; ?></span>
+                            <?php print $content['field_coursework']["#title"]; ?>
+                        </h2>
+                    </div>
+                    <div class="bp2-wdn-col-five-sevenths">
+                        <?php print render($content['field_coursework']); ?>
+                    </div>
+                </div>
+            <?php else : ?>
+                <div class="bp2-wdn-col-three-sevenths">
+                    <h2 class="ec-heading flag">
+                        <span><?php print $title; ?></span>
+                        <?php print $content['field_coursework']["#title"]; ?>
+                    </h2>
+                    <?php print render($content['field_coursework']); ?>
+                </div>
+                <div class="bp2-wdn-col-four-sevenths">
+                    <aside class="student-story">
+                        <?php print views_embed_view('random_student_story','block', $node->nid); ?>
+                    </aside>
+                </div>
+            <?php endif; ?>
         </div>
     </section>
 </div>
@@ -91,14 +105,17 @@
 <div class="wdn-band">
     <div class="wdn-inner-wrapper horizontal-separator">
         <section class="wdn-grid-set" id="entrance-exams">
-            <div class="wdn-col">
+            <div class="bp2-wdn-col-three-sevenths">
                 <h2 class="ec-heading">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_entrance_exams']["#title"]; ?>
                 </h2>
-                <div class="wdn-two-flow-columns">
-                    <?php print render($content['field_entrance_exams']); ?>
-                </div>
+                <?php print render($content['field_entrance_exams']); ?>
+            </div>
+            <div class="bp2-wdn-col-four-sevenths">
+                <aside class="student-story">
+                    <?php print views_embed_view('random_student_story','block', $node->nid); ?>
+                </aside>
             </div>
         </section>
     </div>
@@ -124,19 +141,18 @@
 <div class="wdn-band">
     <div class="wdn-inner-wrapper">
         <section class="bp2-wdn-grid-set-halves" id="additional-resources">
-            <div class="wdn-col-full">
+            <div class="wdn-col">
                 <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_additional_resources']["#title"]; ?>
                 </h2>
+                <?php print render($content['field_additional_resources']); ?>
             </div>
             <div class="wdn-col">
-                        <?php print render($content['field_additional_resources']); ?>
-            </div>
-            <div class="wdn-col">
-                <h3>
+                <h2 class="ec-heading">
+                    <span><?php print $title; ?></span>
                     <?php print $content['field_professional_schools']["#title"]; ?>
-                </h3>
+                </h2>
                 <?php print render($content['field_professional_schools']); ?>
             </div>
         </section>
