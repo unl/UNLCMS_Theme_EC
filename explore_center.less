@@ -221,7 +221,7 @@
 
     #page-navigation {
         text-align: center;
-        background: fadeout(@navColor, 83%);
+        background: fadeout(lighten(@navColor, 15%), 5%);
         margin-top: 2em;
         margin-bottom: 2em;
         padding: 1em 0;
@@ -369,6 +369,7 @@
         text-align: center;
 
         img {
+            max-width: 100%;
             width: 100%;
             border-radius: 50%;
             .box-shadow(0, 0, 0, 3px, fadeout(#56b177, 55%));
