@@ -60,7 +60,7 @@ ie7 .bp4-decoration,.ie8 .bp4-decoration{display:block;}
 #maincontent .round-frame img{max-width:100%;width:100%;border-radius:50%;box-shadow:0 0 0 3px rgba(86, 177, 119, 0.44999999999999996);-webkit-box-shadow:0 0 0 3px rgba(86, 177, 119, 0.44999999999999996);line-height:1;}
 #maincontent .round-frame figcaption{display:none;}
 #maincontent .round-frame.cool img{box-shadow:0 0 0 3px rgba(193, 211, 178, 0.44999999999999996);-webkit-box-shadow:0 0 0 3px rgba(193, 211, 178, 0.44999999999999996);}
-#maincontent .round-frame.large img{width:80%;box-shadow:0 0 0 10px rgba(86, 177, 119, 0.44999999999999996);-webkit-box-shadow:0 0 0 10px rgba(86, 177, 119, 0.44999999999999996);}
+#maincontent .round-frame.large img{width:80%;box-shadow:0 0 0 10px rgba(86, 177, 119, 0.44999999999999996);-webkit-box-shadow:0 0 0 10px rgba(86, 177, 119, 0.44999999999999996);margin:10px;}
 #maincontent .faq-list .question{border-bottom:2px dashed #ebe7d5;font-size:1.2em;font-weight:bold;text-transform:uppercase;display:block;font-family:'Oswald',Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;}
 #maincontent .faq-list .answer{background-color:#fbfbf7;margin:0.5em 1em;padding:0.5em 0.5em 0.5em 2em;position:relative;}#maincontent .faq-list .answer:before{content:"\2713";background-color:#a7cee5;position:absolute;left:0;top:1em;line-height:1;padding:0.25em;color:#fbfbf7;}
 #maincontent .date{width:55px;float:left;text-transform:uppercase;line-height:1;font-family:Oswald,Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;}#maincontent .date span{display:block;}
