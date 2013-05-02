@@ -43,7 +43,7 @@ ie7 .bp4-decoration,.ie8 .bp4-decoration{display:block;}
 #maincontent .wdn-pull-quote{font-size:1.6em;font-family:Oswald,Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;line-height:1.5em;padding:0 0 0 2.5em;quotes:"\201C" "\201D";position:relative;font-style:italic;font-weight:bold;margin-top:75px;}#maincontent .wdn-pull-quote:before{content:open-quote;font-size:400%;font-family:serif;position:absolute;top:0.3em;left:-0.03em;opacity:0.2;font-style:normal;}
 #maincontent .wdn-pull-quote.soothing{border-top:10px solid rgba(86, 177, 119, 0.44999999999999996);padding-top:20px;}
 #maincontent .student-story-teaser .wdn-pull-quote{font-size:1.3em;border-top:0;padding-top:0;margin-top:50px;margin-bottom:1em;}
-#maincontent #page-navigation{text-align:center;background:rgba(226, 239, 246, 0.95);margin-top:2em;margin-bottom:2em;padding:1em 0;top:500px;}
+#maincontent #page-navigation{text-align:center;background:rgba(226, 239, 246, 0.95);margin-top:2em;margin-bottom:2em;padding:1em 0;top:500px;z-index:1;}
 #maincontent #nav-bar-reference{padding:0;}
 #maincontent #slider-nav{list-style:none;padding:0;font-family:'Oswald',Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;font-size:0.95em;}#maincontent #slider-nav li{display:inline-block;padding:0 1.25em;text-transform:uppercase;}
 #maincontent #slider-nav a{color:#1a4259;text-shadow:0 1px 0 #d6e8f3;}
