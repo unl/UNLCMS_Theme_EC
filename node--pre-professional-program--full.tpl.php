@@ -126,7 +126,7 @@
     <div class="wdn-inner-wrapper horizontal-separator">
         <section class="wdn-grid-set" id="application-info">
             <div class="wdn-col-full">
-                <h2 class="ec-heading flag reverse">
+                <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_application_information']["#title"]; ?>
                 </h2>
