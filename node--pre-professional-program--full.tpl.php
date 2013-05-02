@@ -114,7 +114,7 @@
             </div>
             <div class="bp2-wdn-col-four-sevenths">
                 <aside class="student-story">
-                    <?php print views_embed_view('random_student_story','block', $node->nid); ?>
+                    <?php print views_embed_view('random_student_story','pre_health_band_block', $node->nid); ?>
                 </aside>
             </div>
         </section>
