@@ -29,20 +29,26 @@
             <li>
                 <a href="<?php echo(request_path()); ?>#coursework"><?php print $content['field_coursework']["#title"]; ?></a>
             </li>
+            <?php if (isset($content['field_application_information'])) : ?>
             <li>
                 <a href="<?php echo(request_path()); ?>#application-info"><?php print $content['field_application_information']["#title"]; ?></a>
             </li>
+            <?php endif; ?>
             <?php if (isset($content['field_entrance_exams'])) : ?>
             <li>
                 <a href="<?php echo(request_path()); ?>#entrance-exams"><?php print $content['field_entrance_exams']["#title"]; ?></a>
             </li>
             <?php endif; ?>
+            <?php if (isset($content['field_professional_degrees'])) : ?>
             <li>
                 <a href="<?php echo(request_path()); ?>#professional-degrees">Professional Degrees</a>
             </li>
+            <?php endif; ?>
+            <?php if (isset($content['field_additional_resources'])) : ?>
             <li>
                 <a href="<?php echo(request_path()); ?>#additional-resources"><?php print $content['field_additional_resources']["#title"]; ?></a>
             </li>
+            <?php endif; ?>
         </ul>
     </div>
 </nav>
