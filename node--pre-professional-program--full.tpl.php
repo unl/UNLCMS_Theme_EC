@@ -80,7 +80,7 @@
                     Professional Degrees <?php // The field name is different, so just hard code for now ?>
                 </h2>
             </div>
-            <div class="bp2-wdn-col-five-sevenths wdn-two-flow-columns">
+            <div class="bp2-wdn-col-five-sevenths">
                 <?php print render($content['field_professional_degrees']); ?>
             </div>
         </div>
