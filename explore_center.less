@@ -191,14 +191,18 @@
             font-family: serif;
             position: absolute;
             top: 0.3em;
-            left: -0.03em;
+            left: 0;
             opacity: 0.2;
             font-style: normal;
         }
 
         &.soothing {
-            border-top: 10px solid fadeout(#56b177, 55%);
+            @color: #56b177;
+            background-color: fadeout(@color, 90%);
+            padding: 1em;
+            border-top: 10px solid #56b177;
             padding-top: 20px;
+            padding-left: 2.5em;
         }
     }
 
@@ -210,6 +214,7 @@
             padding-top: 0;
             margin-top: 25px;
             margin-bottom: 1em;
+            background: transparent;
         }
     }
 }
