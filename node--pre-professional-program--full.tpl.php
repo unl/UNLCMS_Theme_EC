@@ -57,13 +57,13 @@
         <div class="wdn-grid-set">
             <?php if (isset($content['field_entrance_exams'])) : ?>
                 <div class="wdn-grid-set">
-                    <div class="bp2-wdn-col-two-sevenths">
+                    <div class="bp2-wdn-col-three-sevenths">
                         <h2 class="ec-heading flag">
                             <span><?php print $title; ?></span>
                             <?php print $content['field_coursework']["#title"]; ?>
                         </h2>
                     </div>
-                    <div class="bp2-wdn-col-five-sevenths">
+                    <div class="bp2-wdn-col-four-sevenths">
                         <?php print render($content['field_coursework']); ?>
                     </div>
                 </div>
