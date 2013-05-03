@@ -96,6 +96,16 @@
         &.width-control {
             max-width: 275px;
         }
+
+        &.soothing {
+            @color: #56b177;
+            background-color: darken(@color, 10%);
+            .box-shadow(0, 3px, 0, fadeout(darken(@color, 30%), 25%));
+
+            &:hover {
+                background-color: darken(@color, 15%);
+            }
+        }
     }
 
     .grouped-header {
@@ -155,21 +165,17 @@
         }
 
         &.flag {
-            padding: 0.5em 0 0.5em 60px;
-            background: url(images/title-flag.png) 0 0.2em no-repeat;
-            text-align: left;
+            @color: #2c6d94;
+            background: @color;
+            display: inline-block;
+            color: #fff;
+            margin-left: -12px;
+            padding-left: 12px;
+            padding-right: 50px;
+            border-radius: 0 40px 40px 0;
 
             span {
-                line-height: 0.5em;
-            }
-        }
-
-        &.reverse {
-            text-align: right;
-
-            &.flag {
-                background: url(images/title-flag-reverse.png) 100% 0.2em no-repeat;
-                padding: 0.5em 60px 0.5em 0;
+                color: fadeout(#fff, 15%);
             }
         }
     }

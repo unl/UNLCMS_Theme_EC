@@ -88,13 +88,13 @@
 <div class="wdn-band">
     <section class="wdn-inner-wrapper horizontal-separator" id="professional-degrees">
         <div class="wdn-grid-set">
-            <div class="bp2-wdn-col-two-sevenths">
-                <h2 class="ec-heading">
+            <div class="bp2-wdn-col-three-sevenths">
+                <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     Professional Degrees <?php // The field name is different, so just hard code for now ?>
                 </h2>
             </div>
-            <div class="bp2-wdn-col-five-sevenths">
+            <div class="bp2-wdn-col-four-sevenths">
                 <?php print render($content['field_professional_degrees']); ?>
             </div>
         </div>
@@ -106,7 +106,7 @@
     <div class="wdn-inner-wrapper horizontal-separator">
         <section class="wdn-grid-set" id="entrance-exams">
             <div class="bp2-wdn-col-three-sevenths">
-                <h2 class="ec-heading">
+                <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_entrance_exams']["#title"]; ?>
                 </h2>
@@ -149,7 +149,7 @@
                 <?php print render($content['field_additional_resources']); ?>
             </div>
             <div class="wdn-col">
-                <h2 class="ec-heading">
+                <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_professional_schools']["#title"]; ?>
                 </h2>
