@@ -1,8 +1,12 @@
 <ul>
     <?php 
+    $i = 0;
     foreach ($items as $item) {
+        $i++;
         echo '<li>';
-        print render($item['#markup']);
+            echo '<div class="frame'.$i.'>';
+                print render($item['#markup']);
+            echo '</div>';
         echo '</li>';
     }
     ?>
