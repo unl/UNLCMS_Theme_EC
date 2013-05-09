@@ -97,7 +97,7 @@ WDN.loadJQuery(function () {
     old_marker = marker;
     });
     
-    // Wide modal functionality
+    /* Wide modal functionality
     $('.yellow-link').click( function() {
         var wideModal = '<div id="wide-modal"><h1>Header</h1><p>That text below the header.</p></div>';
         $('#ps-viewport').append(wideModal).slideDown(300);
@@ -109,5 +109,5 @@ WDN.loadJQuery(function () {
             })
         });
     });
-    
+    */
 });
