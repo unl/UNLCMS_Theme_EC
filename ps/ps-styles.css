@@ -1,21 +1,3 @@
-/*
-#ps-wrapper,
-#ps-wrapper:before,
-#the-stage,
-#the-stage:before,
-.clouds-1,
-.clouds-2,
-.clouds-3 {
-    width: 996px;
-    margin-left: -12px;
-}
-*/
-
-
-body {
-    font-size: 15px !important; /* For keeping default font size */
-}
-
 #compass-nav {
   position: relative;
   margin: 40px auto;
@@ -81,13 +63,13 @@ body {
   margin: 40px auto;
   width: 250px;
   height: 250px;
-  background: url('http://ucommwiedel.unl.edu/workspace/ExploreCenter/img/compass-bg.png') no-repeat top center;
+  background: url('compass-bg.png') no-repeat top center;
   background-position: 50% 25px;
   z-index: 2;
 }
 
 #needle {
-  background: url('http://ucommwiedel.unl.edu/workspace/ExploreCenter/img/compass-needle.svg') no-repeat top center;
+  background: url('compass-needle.svg') no-repeat top center;
   background-size: 190px 25px;
   width: inherit;
   height: 25px;
@@ -160,7 +142,7 @@ body {
 
 #compass-nav .milestone.active:before {
   content: "";
-  background: url('http://ucommwiedel.unl.edu/workspace/ExploreCenter/img/checkmark.svg') no-repeat top left;
+  background: url('checkmark.svg') no-repeat top left;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -176,7 +158,6 @@ body {
     -ms-transform: scale(1.5,1.5);
     -o-transform: scale(1.5,1.5);
     transform: scale(1.5,1.5);
-    //transform: scale(1.5,1.5);
     opacity: 0;
   }
 
@@ -186,7 +167,6 @@ body {
     -ms-transform: scale(1,1);
     -o-transform: scale(1,1);
     transform: scale(1,1);
-    //transform: scale(1,1);
     opacity: 1;
   }
 }
@@ -224,7 +204,9 @@ body {
 }
 
 #maincontent
-a.scene-nav {
+.sequence-next,
+#maincontent
+.sequence-prev {
     position: absolute;
     top: 50%;
     font-size: 50px;
@@ -232,18 +214,21 @@ a.scene-nav {
     color: rgba(5, 41, 61, 0.35);
     -webkit-transform: scale(1, 3);
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.65);
+    cursor: pointer;
+    z-index: 10;
 }
 
-a.scene-nav.back {
-    left: 0;
+.sequence-prev  {
+    display: none;
+    left: 5px;
 }
 
-a.scene-nav.forward {
-    right: 0;
+.sequence-next  {
+    right: 5px;
 }
 
-#the-stage,
-#the-stage:before {
+#sequence,
+#sequence:before {
     width: inherit;
     height: 760px;
 }
@@ -253,11 +238,11 @@ a.scene-nav.forward {
     overflow-x: scroll;
 }
 
-#the-stage {
-    background: url('../img/paper_fibers.png') repeat;
+#sequence {
+    background: url('paper_fibers.png') repeat;
 }
 
-#the-stage:before {
+#sequence:before {
     content: " ";
     position: absolute;
     top: 0;
@@ -281,7 +266,7 @@ a.scene-nav.forward {
 }
 
 .clouds-1 {
-    background: transparent url('../img/clouds-1.png') top left repeat-x;
+    background: transparent url('clouds-1.png') top left repeat-x;
     height: 180px;
     -webkit-animation: gliding 10s ease-out;
     -webkit-animation-iteration-count: infinite;
@@ -292,7 +277,7 @@ a.scene-nav.forward {
 }
 
 .clouds-2 {
-    background: transparent url('../img/clouds-2.png') top left repeat-x;
+    background: transparent url('clouds-2.png') top left repeat-x;
     height: 230px;
     opacity: 0.6;
     -webkit-animation: gliding 15s ease-out;
@@ -304,7 +289,7 @@ a.scene-nav.forward {
 }
 
 .clouds-3 {
-    background: transparent url('../img/clouds-3.png') top left repeat-x;
+    background: transparent url('clouds-3.png') top left repeat-x;
     height: 300px;
     opacity: 0.3;
     -webkit-animation: gliding 18s ease-out;
@@ -374,7 +359,7 @@ a.scene-nav.forward {
 
 .mountains {
     position: absolute;
-    background: url('../img/mountains.png') repeat-x 600px 70px;
+    background: url('mountains.png') repeat-x 600px 70px;
     height: 492px;
     width: inherit;
     opacity: 0.55;
@@ -389,7 +374,7 @@ a.scene-nav.forward {
 
 .far-hills {
     position: absolute;  
-    background: url('../img/back-hills.png') repeat-x -300px 100px;
+    background: url('back-hills.png') repeat-x -300px 100px;
     height: 312px;
     width: inherit;
     bottom: 0;
@@ -402,7 +387,7 @@ a.scene-nav.forward {
 
 .close-hills {
     position: absolute;  
-    background: url('../img/front-hills.png') repeat-x 500px 150px;
+    background: url('front-hills.png') repeat-x 500px 150px;
     height: 329px;
     width: inherit;
     bottom: 0;
@@ -417,7 +402,6 @@ a.scene-nav.forward {
     position: absolute;
     top: 150px;
     text-align: center;
-    //margin-top: 10rem;
 }
 
 /* MIX-IN */
@@ -449,12 +433,12 @@ a.scene-nav.forward {
 .ribbon .ribbon-content,
 .ribbon:before, .ribbon:after {
     background: rgb(125,183,224);
-    background: url('../img/kindajean.png'), -moz-linear-gradient(top,  rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
-    background: url('../img/kindajean.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(51, 109, 150)), color-stop(100%,rgb(18, 53, 83)));
-    background: url('../img/kindajean.png'), -webkit-linear-gradient(top, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
-    background: url('../img/kindajean.png'), -o-linear-gradient(top, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
-    background: url('../img/kindajean.png'), -ms-linear-gradient(top, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
-    background: url('../img/kindajean.png'), linear-gradient(to bottom, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
+    background: url('kindajean.png'), -moz-linear-gradient(top,  rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
+    background: url('kindajean.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(51, 109, 150)), color-stop(100%,rgb(18, 53, 83)));
+    background: url('kindajean.png'), -webkit-linear-gradient(top, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
+    background: url('kindajean.png'), -o-linear-gradient(top, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
+    background: url('kindajean.png'), -ms-linear-gradient(top, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
+    background: url('kindajean.png'), linear-gradient(to bottom, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db7e0', endColorstr='#427aaa',GradientType=0 );
     -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 6px -1px;
     -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 6px -1px;
@@ -591,4 +575,76 @@ a.scene-nav.forward {
     width: inherit;
     height: 200px;
     z-index: 2;
+}
+
+/*
+ * Sequence.js styles
+**/
+
+#sequence, .content-wrapper {
+  width: 100%;
+}
+
+#sequence .sequence-canvas { /* required */
+    height: 100%; 
+    width: 100%;
+}
+
+#maincontent
+.sequence-canvas {
+    list-style: none;
+    padding: 0;
+}
+
+#sequence .sequence-canvas > li { /* required */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#sequence  .sequence-canvas lllllli > * {  /* required */
+    position: absolute;
+}
+
+.frame1,
+.frame2,
+.frame3,
+.frame4,
+.frame5 {
+    position: relative;
+    left: 1000px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.animate-in .frame1,
+.animate-in .frame2,
+.animate-in .frame3,
+.animate-in .frame4,
+.animate-in .frame5 {
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.animate-out .frame1,
+.animate-out .frame2,
+.animate-out .frame3,
+.animate-out .frame4,
+.animate-out .frame5 {
+    left: -1000px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    transition-duration: 1s;
 }

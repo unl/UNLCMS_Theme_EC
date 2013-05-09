@@ -4,8 +4,8 @@
     foreach ($items as $item) {
         $i++;
         echo '<li>';
-            echo '<div class="frame'.$i.'>';
-                print render($item['#markup']);
+            echo '<div class="frame'.$i.'">';
+                print render($item);
             echo '</div>';
         echo '</li>';
     }
