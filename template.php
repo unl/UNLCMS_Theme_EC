@@ -19,10 +19,16 @@ function explore_center_preprocess_node (&$vars) {
     }
 }
 
-// Pull in external style sheet for the WDN v3 Grid
-function explore_center_preprocess_html (&$vars) {
-    drupal_add_css('http://www.unl.edu/wdn/templates_3.1/css/content/grid-v3.css', array('type' => 'external'));
-    // External CSS used for testing to circumvent the cache. Remove from production.
+function explore_center_preprocess_html (&$vars) {//echo '<pre>';var_dump($vars);exit;
+  // Pull in external style sheet for the WDN v3 Grid
+  drupal_add_css('http://www.unl.edu/wdn/templates_3.1/css/content/grid-v3.css', array('type' => 'external'));
+    
+  // Add paralax page css and js to just that page
+  if (in_array('node-type-major-promo-collection', $vars['classes_array'])) {
+    drupal_add_css(drupal_get_path('theme', 'explore_center') . '/ps/ps-styles.css', array('type' => 'file'));
+    drupal_add_js(drupal_get_path('theme', 'explore_center') . '/ps/ps-script.js', array('type' => 'file'));
+    drupal_add_js(drupal_get_path('theme', 'explore_center') . '/ps/jquery.sequence-min.js', array('type' => 'file'));
+  }    
 }
 
 /**
