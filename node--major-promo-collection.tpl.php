@@ -4,7 +4,7 @@
     <div id="compass">
         <div id="needle"></div>
     </div>
-    <a class="milestone" style="left: -8px; top: 105px;">1</a> 
+    <a class="milestone active" style="left: -8px; top: 105px;">1</a> 
     <a class="milestone" style="left: 25px; bottom: 28px;">2</a> 
     <a class="milestone" style="left: 108px; bottom: -8px;">3</a> 
     <a class="milestone" style="right: 25px; bottom: 28px;">4</a> 
