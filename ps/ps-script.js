@@ -24,6 +24,10 @@ WDN.loadJQuery(function () {
         '-o-transform': 'rotate(' + shift + 'deg)',
         'transform': 'rotate(' + shift + 'deg)'
       });
+      
+        // For Checkmark Action
+        $('.milestone').removeClass('active');
+        $('.milestone:nth-of-type('+ (marker) +')').addClass('active');
 
     if (marker >= 5) {
         $(this).fadeOut(300);
@@ -47,6 +51,11 @@ WDN.loadJQuery(function () {
         '-o-transform': 'rotate(' + shift + 'deg)',
         'transform': 'rotate(' + shift + 'deg)'
       });
+      
+       // For Checkmark Action
+        $('.milestone').removeClass('active');
+        $('.milestone:nth-of-type('+ (marker) +')').addClass('active');
+      
         if (marker <= 1) {
             $(this).fadeOut(300);
         } else {
@@ -84,7 +93,8 @@ WDN.loadJQuery(function () {
     }
       
     // This will need to be moved
-      //$(this).toggleClass('active');
+    $('.milestone').removeClass('active');
+    $(this).addClass('active');
 
       $("#bar, #needle").css({
         '-webkit-transform': 'rotate(' + shift + 'deg)',
