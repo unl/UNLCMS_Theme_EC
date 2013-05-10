@@ -607,11 +607,11 @@
     position: absolute;
 }
 
-.frame1,
-.frame2,
-.frame3,
-.frame4,
-.frame5 {
+#frame1,
+#frame2,
+#frame3,
+#frame4,
+#frame5 {
     position: relative;
     left: 1000px;
     -webkit-transition-duration: 1s;
@@ -621,11 +621,11 @@
     transition-duration: 1s;
 }
 
-.animate-in .frame1,
-.animate-in .frame2,
-.animate-in .frame3,
-.animate-in .frame4,
-.animate-in .frame5 {
+.animate-in #frame1,
+.animate-in #frame2,
+.animate-in #frame3,
+.animate-in #frame4,
+.animate-in #frame5 {
     top: 0;
     left: 0;
     right: 0;
@@ -636,11 +636,11 @@
     transition-duration: 1s;
 }
 
-.animate-out .frame1,
-.animate-out .frame2,
-.animate-out .frame3,
-.animate-out .frame4,
-.animate-out .frame5 {
+.animate-out #frame1,
+.animate-out #frame2,
+.animate-out #frame3,
+.animate-out #frame4,
+.animate-out #frame5 {
     left: -1000px;
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;

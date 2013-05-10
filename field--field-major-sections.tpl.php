@@ -4,7 +4,7 @@
     foreach ($items as $item) {
         $i++;
         echo '<li>';
-            echo '<div class="frame'.$i.'">';
+            echo '<div id="frame'.$i.'">';
                 print render($item);
             echo '</div>';
         echo '</li>';
