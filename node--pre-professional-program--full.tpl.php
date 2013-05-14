@@ -125,14 +125,14 @@
 <div class="wdn-band">
     <div class="wdn-inner-wrapper horizontal-separator">
         <section class="wdn-grid-set" id="entrance-exams">
-            <div class="bp2-wdn-col-three-sevenths">
+            <div class="wdn-fol-full">
                 <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_application_information']["#title"]; ?>
                 </h2>
-            </div>
-            <div class="bp2-wdn-col-four-sevenths">
-                <?php print render($content['field_application_information']); ?>
+                <div class="csscolumns wdn-two-flow-columns">
+                    <?php print render($content['field_application_information']); ?>
+                </div>
             </div>
         </section>
     </div>
