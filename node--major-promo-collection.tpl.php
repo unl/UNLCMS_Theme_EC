@@ -4,11 +4,13 @@
     <div id="compass">
         <div id="needle"></div>
     </div>
-    <a class="milestone active" style="left: -8px; top: 105px;">1</a> 
-    <a class="milestone" style="left: 25px; bottom: 28px;">2</a> 
-    <a class="milestone" style="left: 108px; bottom: -8px;">3</a> 
-    <a class="milestone" style="right: 25px; bottom: 28px;">4</a> 
-    <a class="milestone" style="right: -8px; top: 105px;">5</a>
+    <ul class="sequence-pagination">
+    	<li style="left: -8px; top: 105px;"><a class="milestone">1</a></li> 
+    	<li style="left: 25px; bottom: 28px;"><a class="milestone">2</a></li> 
+    	<li style="left: 108px; bottom: -8px;"><a class="milestone">3</a></li> 
+    	<li style="right: 25px; bottom: 28px;"><a class="milestone">4</a></li> 
+    	<li style="right: -8px; top: 105px;"><a class="milestone">5</a></li>
+    </ul>
 </div>
 <section id="ps-viewport">
     <section id="ps-wrapper">
