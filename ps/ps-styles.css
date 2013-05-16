@@ -1,5 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 #compass-nav {
   position: relative;
   margin: 40px auto;
@@ -89,6 +97,7 @@
 
 .sequence-pagination li {
     position: absolute;
+    list-style: none;
     text-indent: -9999px;
     z-index: 500;
 }
@@ -495,6 +504,7 @@
 #maincontent
 .content-wrapper .blurb {
     font-size: 22px;
+    margin-bottom: 20px;
 }
 
 #maincontent
@@ -507,26 +517,41 @@
 #maincontent
 .content-wrapper .blurb .side-left {
     display: inline-block;
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 75%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.85)), color-stop(75%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%);
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%);
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%);
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ffffff', endColorstr='#00ffffff',GradientType=1 );
     font-family: "Oswald",Helvetica,Arial,sans-serif;
     font-size: 18px;
     text-align: right;
     text-transform: uppercase;
-    line-height: 130%;
+    line-height: 160%;
     box-sizing: border-box;
     padding-right: 15px;
-    width: 32%;
+    width: 30%;
     text-shadow: 1px 1px 1px white, 0px 3px 15px rgba(0, 0, 0, 0.25);
 }
 
 #maincontent
 .content-wrapper .blurb .main-right {
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 99%, rgba(255,255,255,0.9) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(99%,rgba(255,255,255,0.9)), color-stop(100%,rgba(255,255,255,0.9)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6ffffff',GradientType=0 );
     display: inline-block;
     text-align: left;
     box-sizing: border-box;
-    box-shadow: -5px 0 8px -6px;
+    box-shadow: -6px 0 8px -6px, 0 15px 10px -10px rgba(0, 0, 0, 0.2);
     border-left: 2px solid;
     padding-left: 15px;
-    width: 67%;
+    width: 65%;
+    border-bottom-right-radius: 8px;
 }
 
 #maincontent
