@@ -3,8 +3,8 @@
     $i = 0;
     foreach ($items as $item) {
         $i++;
-        echo '<li>';
-            echo '<div id="frame'.$i.'">';
+        echo '<li id="frame-'.$i.'">';
+            echo '<div class="slide-'.$i.'">';
                 print render($item);
             echo '</div>';
         echo '</li>';

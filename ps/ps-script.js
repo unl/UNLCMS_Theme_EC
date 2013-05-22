@@ -5,6 +5,7 @@ WDN.loadJQuery(function () {
         marker,
         old_marker,
     	options = {
+    		hashTags: true,
         	nextButton: true,
         	prevButton: true,
         	pagination: true,
@@ -12,8 +13,39 @@ WDN.loadJQuery(function () {
         	autoPlay: false,
         	preloader: true,
         	preloadTheseFrames: [1]
-    	},
+    	};
+		
+	// Do we need the splash page?
+	var hash = window.location.hash,
+		sequence;
+	if (hash == "") {
+		// Make Intro screen
+		$('#ps-viewport').append('<div id="intro"></div>');
+		$('#intro').append('<h1></h1><p class="sub-text"></p><p class="main-text"></p>');
+		$('#intro').append('<span id="start">&rarr;</span>');
+		
+		// Populate the mark-up
+		$('#intro > h1').html('Find your Major');
+		$('#intro > .sub-text').html('We are excited to work with you on your exciting journey of exploring and deciding upon a major at UNL!&nbsp;&nbsp;Almost 1 of 5 students entering UNL students are still deciding on a major, <u>so you are not alone</u>.');
+		$('#intro > .main-text').html('Not every student takes the same path when choosing a major, and your adviser will serve as your guide along the process.  Decisions about majors involve not only exploration of the different majors and careers available, but also require you to examine yourself and determine where your interests, skills, and values lie.  The path ahead outlines a variety of factors that can be explored when selecting a major (and these factors can be further explored on this website), and you should work with your adviser to create an individual action plan for your specific major exploration process.');
+		
+		// Display Splash intro
+		$('#intro').delay(200).fadeIn('slow');
+				
+		// Click button to start Sequence.js
+		$('#start').click( function() {
+			$('#intro').fadeOut('slow', function() {
+				$('#compass-nav').fadeIn('slow');
+				$('.sequence-next').fadeIn('slow');
+			});
+			
+			
+			sequence = $("#sequence").sequence(options).data("sequence");
+		});
+	} else {
+		$('#compass-nav').delay(750).fadeIn('slow');
 		sequence = $("#sequence").sequence(options).data("sequence");
+	}
     
     // NEXT BUTTON
 	$('.sequence-next').click( function() {
@@ -203,11 +235,10 @@ WDN.loadJQuery(function () {
   		}
 	});
     
-    /* Wide modal functionality
-    $('.yellow-link').click( function() {
+    /* Wide modal functionality */
+    $('.modal').click( function() {
         var wideModal = '<div id="wide-modal"><h1>Header</h1><p>That text below the header.</p></div>';
         $('#ps-viewport').append(wideModal).slideDown(300);
-        
         
         $('#wide-modal').click( function() {
             $(this).hide(300, function() {
@@ -215,5 +246,4 @@ WDN.loadJQuery(function () {
             })
         });
     });
-    */
 });
