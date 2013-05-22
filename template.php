@@ -27,6 +27,7 @@ function explore_center_preprocess_html (&$vars) {//echo '<pre>';var_dump($vars)
   if (in_array('node-type-major-promo-collection', $vars['classes_array'])) {
     drupal_add_css(drupal_get_path('theme', 'explore_center') . '/ps/ps-styles.css', array('type' => 'file'));
     drupal_add_js(drupal_get_path('theme', 'explore_center') . '/ps/ps-script.js', array('type' => 'file'));
+    drupal_add_js(drupal_get_path('theme', 'explore_center') . '/ps/jquery.ba-hashchange.min.js', array('type' => 'file'));
     drupal_add_js(drupal_get_path('theme', 'explore_center') . '/ps/jquery.sequence-min.js', array('type' => 'file'));
   }    
 }
