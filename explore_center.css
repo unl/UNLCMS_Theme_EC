@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700);
 .front #pagetitle{display:none;}
 .front.logged-in #pagetitle,.node-type-major-promo-collection #pagetitle{display:block;visibility:hidden;}
 #maincontent{z-index:0;}#maincontent .wdn-band{margin-right:-4px;margin-left:-4px;padding-top:4px;padding-bottom:4px;}#maincontent .wdn-band:after{content:"";display:table;clear:both;}
@@ -52,6 +52,8 @@ ie7 .bp4-decoration,.ie8 .bp4-decoration{display:block;}
 #maincontent .creamy-wrapper{background-color:#f7f6ed;color:#7b7437;}#maincontent .creamy-wrapper .ec-heading{color:#7b7437;}
 #maincontent .creamy-wrapper .grouped-header{line-height:1;border-bottom:1px solid #e7e4ca;}#maincontent .creamy-wrapper .grouped-header .sub-task{font-size:0.75em;}
 #maincontent .cool-wrapper{background:rgba(167, 206, 229, 0.17000000000000004);}#maincontent .cool-wrapper .button{background-color:#2c6d94;box-shadow:0 3px 0 rgba(88, 162, 206, 0.75);-webkit-box-shadow:0 3px 0 rgba(88, 162, 206, 0.75);}#maincontent .cool-wrapper .button:hover{background-color:#265f81;}
+#maincontent .cool-list ul{list-style:none;margin:0;padding:0.5em;}
+#maincontent .cool-list li{padding:0.5em 5px;border-bottom:1px solid #e2eff6;}
 #maincontent .faded-wrapper{background:rgba(243, 241, 230, 0.44999999999999996);}
 #maincontent #academic-advisers h2{font-size:1.6em;}
 #maincontent #academic-advisers .ec-heading:not(.flag){margin:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;color:#03080a;font-size:1.2em;padding:0.25em;}#maincontent #academic-advisers .ec-heading:not(.flag) span{font-size:0.7em;}
