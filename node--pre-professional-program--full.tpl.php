@@ -53,17 +53,19 @@
     </div>
 </nav>
 <div class="wdn-band">
+    <?php 
+    // If we have content for the "entrance exams," place student story there.
+    // Otherwise, student story goes with coursework (rendered as academic expecations)
+    ?>
     <section class="wdn-inner-wrapper horizontal-separator" id="coursework">
         <div class="wdn-grid-set">
             <?php if (isset($content['field_entrance_exams'])) : ?>
-                <div class="wdn-grid-set">
-                    <div class="bp2-wdn-col-three-sevenths">
-                        <h2 class="ec-heading flag">
-                            <span><?php print $title; ?></span>
-                            <?php print $content['field_coursework']["#title"]; ?>
-                        </h2>
-                    </div>
-                    <div class="bp2-wdn-col-four-sevenths">
+                <div class="wdn-col-full">
+                    <h2 class="ec-heading flag">
+                        <span><?php print $title; ?></span>
+                        <?php print $content['field_coursework']["#title"]; ?>
+                    </h2>
+                    <div class="csscolumns wdn-two-flow-columns">
                         <?php print render($content['field_coursework']); ?>
                     </div>
                 </div>
@@ -88,14 +90,14 @@
 <div class="wdn-band">
     <section class="wdn-inner-wrapper horizontal-separator" id="professional-degrees">
         <div class="wdn-grid-set">
-            <div class="bp2-wdn-col-three-sevenths">
+            <div class="wdn-col-full">
                 <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     Professional Degrees <?php // The field name is different, so just hard code for now ?>
                 </h2>
-            </div>
-            <div class="bp2-wdn-col-four-sevenths">
-                <?php print render($content['field_professional_degrees']); ?>
+                <div class="csscolumns wdn-two-flow-columns">
+                    <?php print render($content['field_professional_degrees']); ?>
+                </div>
             </div>
         </div>
     </section>
@@ -125,7 +127,7 @@
 <div class="wdn-band">
     <div class="wdn-inner-wrapper horizontal-separator">
         <section class="wdn-grid-set" id="entrance-exams">
-            <div class="wdn-fol-full">
+            <div class="wdn-col-full">
                 <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_application_information']["#title"]; ?>
