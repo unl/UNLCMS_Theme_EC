@@ -52,7 +52,7 @@ function explore_center_preprocess_region (&$vars) {
             }
             // Add the parallax CSS to just the parallax page.
             if ($menu_object->type == 'major_promo_collection') {
-                drupal_add_css(drupal_get_path('theme', 'explore_center') . "parallax.css");
+                drupal_add_css(drupal_get_path('theme', 'explore_center') . "ps/ps-styles.css");
             }
         }
     }
