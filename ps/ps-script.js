@@ -1,5 +1,6 @@
 WDN.loadJQuery(function () {  
     var $ = WDN.jQuery,
+    	mouse_is_inside = false,
     	phase = 0,
         shift = 0,
         marker,
@@ -46,6 +47,10 @@ WDN.loadJQuery(function () {
 		$('#compass-nav').delay(750).fadeIn('slow');
 		sequence = $("#sequence").sequence(options).data("sequence");
 	}
+    
+    // Add wide-modal (But hide it!)
+    var wideModal = '<div id="wide-modal"><h1>Header</h1><p>That text below the header.</p></div>';
+    $('#ps-viewport').append(wideModal);
     
     // NEXT BUTTON
 	$('.sequence-next').click( function() {
@@ -235,15 +240,26 @@ WDN.loadJQuery(function () {
   		}
 	});
     
+    //Track mouse position
+    $('#wide-modal').hover(function() {
+        mouse_is_inside = true;
+    }, function() {
+        mouse_is_inside = false;
+    });
+    
     /* Wide modal functionality */
     $('.modal').click( function() {
-        var wideModal = '<div id="wide-modal"><h1>Header</h1><p>That text below the header.</p></div>';
-        $('#ps-viewport').append(wideModal).slideDown(300);
+        $('#wide-modal').slideDown(300, function() {
         
-        $('#wide-modal').click( function() {
-            $(this).hide(300, function() {
-                $(this).remove();
-            })
+        	$(this).addClass('withShadow');
+        	
+        	$('body').mouseup(function() {
+    			if (!mouse_is_inside) {
+            		$('#wide-modal').fadeOut(250).removeClass('withShadow');
+        		}
+    		});
         });
     });
+    
+    
 });
