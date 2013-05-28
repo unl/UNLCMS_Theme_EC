@@ -224,7 +224,7 @@
                         navBar.css({'position' : 'fixed', 'top' : (navBarMarginTop * -1) + 'px', 'width' : loadedWidth, 'margin-top': navBarMarginTop});
                         refDiv.css({'margin-bottom' : navBarHeight + 'px'}); // shim
                     } else {
-                        navBar.css({'position' : 'initial', 'width' : 'auto', 'margin-top' : '2em'});
+                        navBar.css({'position' : 'static', 'width' : 'auto', 'margin-top' : '2em'});
                         refDiv.css({'margin-bottom' : 'auto'}); // shim
                     }
                 }
