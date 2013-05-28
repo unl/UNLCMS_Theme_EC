@@ -126,7 +126,7 @@
 <?php if (isset($content['field_application_information'])) : ?>
 <div class="wdn-band">
     <div class="wdn-inner-wrapper horizontal-separator">
-        <section class="wdn-grid-set" id="entrance-exams">
+        <section class="wdn-grid-set" id="application-info">
             <div class="wdn-col-full">
                 <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
