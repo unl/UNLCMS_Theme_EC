@@ -650,11 +650,6 @@
 }
 
 #maincontent
-.content-wrapper .yellow-link {
-    font-size: 24px;
-}
-
-#maincontent
 .content-wrapper .blurb {
     width: 100%;
     display: block;
@@ -675,6 +670,7 @@
     margin: 0 auto;
     padding: 15px;
     font-family: Rokkitt, serif;
+    font-size: 24px;
     color: #666;
     background: rgb(252,234,116);
     background: -moz-linear-gradient(top,  rgb(252,234,116) 0%, rgb(237,213,37) 100%);
@@ -694,14 +690,26 @@
 }
 
 #wide-modal {
-    display: block;
-    background:  white;
-    position: absolute;
-    top: 40%;
-    width: inherit;
-    height: 200px;
-    z-index: 2;
+    display: none;
+    background: rgb(255, 247, 236);
+	position: absolute;
+	top: 25%;
+	width: inherit;
+	text-align: center;
+	height: 200px;
+	z-index: 10;
+	
+	-webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -ms-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
 }
+
+#wide-modal.withShadow {
+	box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.4), inset 0 0 30px -10px rgb(116, 65, 18), 0 80px 90px 200px rgba(0, 0, 0, 0.45);
+}
+
 
 /*
  * Sequence.js styles
