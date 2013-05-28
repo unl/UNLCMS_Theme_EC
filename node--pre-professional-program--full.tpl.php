@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="wdn-col">
-                <h2 class="ec-heading">
+                <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_overview']["#title"]; ?>
                 </h2>
