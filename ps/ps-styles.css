@@ -609,13 +609,6 @@
 #maincontent
 .content-wrapper .blurb .side-left {
     display: inline-block;
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 75%, rgba(255,255,255,0) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.85)), color-stop(75%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%);
-    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%);
-    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%);
-    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ffffff', endColorstr='#00ffffff',GradientType=1 );
     font-family: "Oswald",Helvetica,Arial,sans-serif;
     font-size: 18px;
     text-align: right;
@@ -634,37 +627,41 @@
 
 #maincontent
 .content-wrapper .blurb .main-right {
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 99%, rgba(255,255,255,0.9) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(99%,rgba(255,255,255,0.9)), color-stop(100%,rgba(255,255,255,0.9)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6ffffff',GradientType=0 );
     display: inline-block;
     text-align: left;
     box-sizing: border-box;
-    box-shadow: -6px 0 8px -6px, 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: -6px 0 8px -6px;
     border-left: 2px solid;
     padding: 0 15px;
     width: 65%;
+    max-height: 330px;
+    overflow: scroll;
     border-bottom-right-radius: 8px;
 }
 
 #maincontent
 .content-wrapper .blurb {
-    width: 100%;
-    display: block;
-    box-sizing: border-box;
-    /* text-align: left; */
-    font-family: Rokkitt, serif;
-    line-height: 135%;
-    color: rgb(70, 100, 124);
-    margin-top: 50px;
-    padding: 0 60px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 99%, rgba(255,255,255,0.9) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(99%,rgba(255,255,255,0.9)), color-stop(100%,rgba(255,255,255,0.9)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 99%,rgba(255,255,255,0.9) 100%);
+    width: 90%;
+	display: block;
+	box-sizing: border-box;
+	font-family: Rokkitt,serif;
+	line-height: 135%;
+	color: rgb(70,100,124);
+	margin: 60px 5% 20px;
+	padding-bottom: 5px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+	box-shadow: 0 15px 10px -10px rgba(0,0,0,0.2);
+	border-radius: 0 0 6px 6px;
 }
 
+
+/* Change for Green link style help for the ones Seth made */
 #maincontent
 .content-wrapper .yellow-link {
     display: block;
@@ -691,27 +688,33 @@
     box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.4);
 }
 
-#wide-modal {
-    display: none;
-    background: rgb(255, 247, 236);
-	position: absolute;
-	top: 25%;
-	width: inherit;
-	text-align: center;
-	height: 200px;
-	z-index: 10;
+.fake-modal {
+    cursor: pointer;
+    color: rgb(128, 152, 172);
+    border-radius: 8px;
+    padding: 2px 5px;
 	
-	-webkit-transition: all 0.35s ease;
-    -moz-transition: all 0.35s ease;
-    -ms-transition: all 0.35s ease;
-    -o-transition: all 0.35s ease;
-    transition: all 0.35s ease;
+	-webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 
-#wide-modal.withShadow {
-	box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.4), inset 0 0 30px -10px rgb(116, 65, 18), 0 80px 90px 200px rgba(0, 0, 0, 0.45);
+.fake-modal:hover {
+	color: rgb(70,100,124);
 }
 
+.fake-modal.now-selected {
+	background: rgb(70,100,124);
+	color: white;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+	box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.35);
+}
+
+.fake-modal.now-selected:hover {
+	color: white;
+}
 
 /*
  * Sequence.js styles
