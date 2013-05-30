@@ -1,7 +1,7 @@
 <?php 
 foreach ($items as $item) :
 ?>
-    <figure class="student-photo">
+    <figure>
         <?php print render($item); ?>
     </figure>
 <?php endforeach; ?>
