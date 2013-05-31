@@ -40,17 +40,12 @@ WDN.loadJQuery(function () {
 				$('.sequence-next').fadeIn('slow');
 			});
 			
-			
 			sequence = $("#sequence").sequence(options).data("sequence");
 		});
 	} else {
 		$('#compass-nav').delay(750).fadeIn('slow');
 		sequence = $("#sequence").sequence(options).data("sequence");
 	}
-    
-    // Add wide-modal (But hide it!)
-    var wideModal = '<div id="wide-modal"><h1>Header</h1><p>That text below the header.</p></div>';
-    $('#ps-viewport').append(wideModal);
     
     // NEXT BUTTON
 	$('.sequence-next').click( function() {
@@ -240,26 +235,52 @@ WDN.loadJQuery(function () {
   		}
 	});
     
-    //Track mouse position
-    $('#wide-modal').hover(function() {
-        mouse_is_inside = true;
-    }, function() {
-        mouse_is_inside = false;
-    });
+
+    /* 'Fake' modal window functionality */
+    $('.fake-modal').click( function() {	
+    	// Important, use for compass, maybe not needed here...?
+    	var frameId = $(this).parents('.animate-in').attr("id"),
+    	tabWindow = $(this).parents('.side-left').siblings('.main-right'),
+    	tabKey = $(this).data('tab'),
+    	tabContent,
+    	childCount,
+    	i = 1,
+    	mData = {shadow: 'shadow', career: 'career', review: 'review', course: 'course', decision: 'decision'};
+    	
+    	// The Injected Content
+    	switch (tabKey) {
+    		case mData.shadow:
+      			tabContent = '<p>Shadowing a Lincoln professional is a great way to experience first-hand what a typical day may look like in a career of interest.  Through a shadowing experience, you also will have the opportunity to ask an expert for inside advice about the career you are exploring.  Let Career Services help you set up a shadowing experience by talking with them about their Guided Professional Shadowing (GPS) program!</p>';
+    		break;
+    		case mData.career:
+    			tabContent = '<p>When considering a career that is the best fit for you, it is important to consider things like the content of the work, work conditions, work environment, pay, etc.  To get you started visit:</p><ul><li><a href="http://www.bls.gov/ooh/">Occupational Outlook Handbook</a></li><li>“Learn About Careers” section of <a href="http://public.careercruising.com/us/en">Career Cruising</a></li></ul>';
+    		break;
+    		case mData.review:
+    			tabContent = '<p>Even though it is not yet time for you to submit job applications, reading through job descriptions can be a helpful way to better understand what day-to-day activities of a job or profession may entail.  UNL students have access to a plethora of job descriptions through <a href="http://www.unl.edu/careers/hhl">Husker Hire Link</a>.</p>';
+    		break;
+    		case mData.course:
+    			tabContent = '<p>Take a one credit hour major “intro” course.  Most of these courses cover not only information about the major, but about careers related to that major.  Many also invite guest speakers to come to share more about their experiences within their career fields.</p>';
+    		break;
+    		case mData.decision:
+    			tabContent = '<p>Whatever your decision-making style, your decision will probably include these steps:</p><ol><li><strong>Gather information:</strong> Decision-making includes a lot of information gathering.  Set achievable goals for finding out more about possible majors.  Examples of achievable goals in your decision making process:<ol style="list-style:lower-alpha"><li>Visit the Career Services center this semester in 230 Nebraska Union to ask about some careers I am interested in.</li><li>Read about majors on the Undergraduate Bulletin</li><li>Meet with a professor or academic adviser in a major I am considering and find out more about the classes required and possible careers I can do with this major.</li><li>Shadow a professional in an area I want to learn more about.</li><li>Get involved in a student organization I care about.  Ask students in the organization about how they decided on their major.</li><li>Visit an academic adviser in the Explore Center to talk about possible majors and further goals in my process of choosing a major.</li><li>Take an exploratory class in a major you are considering.  Visit with an Explore Center adviser for suggestions or find on the website.</ol></li><li>Pros/Likes and Cons/Dislikes of majors:  Get out a piece of paper and make a list of the pros/likes and cons/dislikes of majors you are considering.  Examples of likes and dislikes could include working environment, autonomy, salary, your own interest level, skills needed, required courses, and possible careers.  For each major, ask yourself these questions:<ul><li>Do the pros outweigh the cons or vice versa?</li><li>Do you notice any patterns with what you put in your pro column and your con column (these are clues to what you value in a career/major)?</li><li>Could any of the cons be turned into pros?  How?</li><li>Are there any majors that had more pros than cons?  Would I be willing to look into those more as possible majors?</ul></li><li>Still not sure?<ul><li>Make sure to click through all the rest of the resources in Find a Major for more help</li></ul></li></ol>';
+    		break;
+    	}
     
-    /* Wide modal functionality */
-    $('.modal').click( function() {
-        $('#wide-modal').slideDown(300, function() {
-        
-        	$(this).addClass('withShadow');
-        	
-        	$('body').mouseup(function() {
-    			if (!mouse_is_inside) {
-            		$('#wide-modal').fadeOut(250).removeClass('withShadow');
-        		}
-    		});
+        // Fade in and replace previous content
+        childCount = tabWindow.children().length;
+        tabWindow.children().fadeOut(300, function() {
+        	console.log($(this).val());
+        	$(this).remove();
+        	if (i == childCount) {
+        		$(tabContent).hide().appendTo(tabWindow).fadeIn(300);
+        	}
+        	i++;
         });
+        
+        // Add styles for selected
+        $(this).siblings('.fake-modal').removeClass('now-selected');
+        $(this).addClass('now-selected');
+        
     });
-    
     
 });
