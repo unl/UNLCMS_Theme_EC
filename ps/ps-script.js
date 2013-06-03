@@ -237,7 +237,7 @@ WDN.loadJQuery(function () {
     
 
     /* 'Fake' modal window functionality */
-    $('.fake-modal').click( function() {	
+    $('span.fake-modal').click( function() {	
     	// Important, use for compass, maybe not needed here...?
     	var frameId = $(this).parents('.animate-in').attr("id"),
     	tabWindow = $(this).parents('.side-left').siblings('.main-right'),
@@ -278,7 +278,7 @@ WDN.loadJQuery(function () {
         });
         
         // Add styles for selected
-        $(this).siblings('.fake-modal').removeClass('now-selected');
+        $('.fake-modal').removeClass('now-selected');
         $(this).addClass('now-selected');
         
     });
