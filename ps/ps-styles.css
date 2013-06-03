@@ -624,6 +624,10 @@
 	text-align: left;
 }
 
+#maincontent .side-left .button {
+    width: 100%;
+}
+
 #maincontent
 .content-wrapper .blurb .main-right {
     display: inline-block;
