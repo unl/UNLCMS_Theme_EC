@@ -3,7 +3,7 @@
 .front.logged-in #pagetitle,.node-type-major-promo-collection #pagetitle{display:block;visibility:hidden;}
 #maincontent{z-index:0;}
 .relative-holder{position:relative;}
-.relative-content{position:absolute;bottom:5%;width:100%;padding:2em 0;background-color:rgba(0, 0, 0, 0.5);border-width:1px 0;border-color:rgba(255, 255, 255, 0.85);border-style:solid;}
+.relative-content{position:absolute;bottom:0;width:100%;padding:1em 0;background-color:rgba(0, 0, 0, 0.5);border-width:1px 0;border-color:rgba(255, 255, 255, 0.85);border-style:solid;}
 .wdn-band{margin-right:-4px;margin-left:-4px;padding-top:4px;padding-bottom:4px;}.wdn-band:after{content:"";display:table;clear:both;}
 .wdn-band .wdn-stretch{max-width:100%;width:100%;}
 .wdn-inner-wrapper{padding-right:4px;padding-left:4px;}
@@ -31,7 +31,7 @@ ie7 .bp4-decoration,.ie8 .bp4-decoration{display:block;}
 [class$='-decoration']{display:none;}
 #maincontent{color:#535353;font-family:Georgia,'Bitstream Charter','Century Schoolbook L','Liberation Serif',Times,serif;font-size:14px;line-height:1.7;color:#787878;}#maincontent ul[class*="wdn-grid-set"],#maincontent ol[class*="wdn-grid-set"]{padding-left:0;list-style:none;}
 #maincontent .horizontal-separator{background:url(images/horizontal-separator.png) center bottom no-repeat;padding-bottom:50px;margin-bottom:10px;}
-#maincontent .splash-title{position:absolute;font-size:4em;top:45%;color:white;text-shadow:1px 1px 10px black;}
+#maincontent .splash-title{position:absolute;font-size:3em;bottom:19%;text-align:center;width:100%;color:white;text-shadow:1px 1px 10px black;}
 #maincontent .center,#maincontent .wdn-center{text-align:center;}
 #maincontent .summary{font-size:1.6em;font-style:italic;}
 #maincontent .button{font-size:1em;background-color:#2c6d94;border-radius:40px;box-shadow:0 3px 0 rgba(108, 173, 211, 0.75);-webkit-box-shadow:0 3px 0 rgba(108, 173, 211, 0.75);color:#fff;padding:10px 25px;line-height:1.5;display:inline-block;text-align:center;font-family:"Lucida Grande",Verdana,Arial,sans-serif;}#maincontent .button:hover{background-color:#265f80;color:#fff;}
