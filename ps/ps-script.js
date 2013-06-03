@@ -237,7 +237,7 @@ WDN.loadJQuery(function () {
     
 
     /* 'Fake' modal window functionality */
-    $('.fake-modal').click( function() {	
+    $('span.fake-modal').click( function() {	
     	// Important, use for compass, maybe not needed here...?
     	var frameId = $(this).parents('.animate-in').attr("id"),
     	tabWindow = $(this).parents('.side-left').siblings('.main-right'),
@@ -245,7 +245,7 @@ WDN.loadJQuery(function () {
     	tabContent,
     	childCount,
     	i = 1,
-    	mData = {shadow: 'shadow', career: 'career', review: 'review', course: 'course', decision: 'decision'};
+    	mData = {shadow: 'shadow', career: 'career', review: 'review', course: 'course', gather: 'gather', procons: 'procons', notsure: 'notsure'};
     	
     	// The Injected Content
     	switch (tabKey) {
@@ -261,9 +261,15 @@ WDN.loadJQuery(function () {
     		case mData.course:
     			tabContent = '<p>Take a one credit hour major “intro” course.  Most of these courses cover not only information about the major, but about careers related to that major.  Many also invite guest speakers to come to share more about their experiences within their career fields.</p>';
     		break;
-    		case mData.decision:
-    			tabContent = '<p>Whatever your decision-making style, your decision will probably include these steps:</p><ol><li><strong>Gather information:</strong> Decision-making includes a lot of information gathering.  Set achievable goals for finding out more about possible majors.  Examples of achievable goals in your decision making process:<ol style="list-style:lower-alpha"><li>Visit the Career Services center this semester in 230 Nebraska Union to ask about some careers I am interested in.</li><li>Read about majors on the Undergraduate Bulletin</li><li>Meet with a professor or academic adviser in a major I am considering and find out more about the classes required and possible careers I can do with this major.</li><li>Shadow a professional in an area I want to learn more about.</li><li>Get involved in a student organization I care about.  Ask students in the organization about how they decided on their major.</li><li>Visit an academic adviser in the Explore Center to talk about possible majors and further goals in my process of choosing a major.</li><li>Take an exploratory class in a major you are considering.  Visit with an Explore Center adviser for suggestions or find on the website.</ol></li><li>Pros/Likes and Cons/Dislikes of majors:  Get out a piece of paper and make a list of the pros/likes and cons/dislikes of majors you are considering.  Examples of likes and dislikes could include working environment, autonomy, salary, your own interest level, skills needed, required courses, and possible careers.  For each major, ask yourself these questions:<ul><li>Do the pros outweigh the cons or vice versa?</li><li>Do you notice any patterns with what you put in your pro column and your con column (these are clues to what you value in a career/major)?</li><li>Could any of the cons be turned into pros?  How?</li><li>Are there any majors that had more pros than cons?  Would I be willing to look into those more as possible majors?</ul></li><li>Still not sure?<ul><li>Make sure to click through all the rest of the resources in Find a Major for more help</li></ul></li></ol>';
+    		case mData.gather:
+    			tabContent = '<p>Decision-making includes a lot of information gathering.  Set achievable goals for finding out more about possible majors.  Examples of achievable goals in your decision making process:</p><ul><li>i. Visit the Career Services center this semester in 230 Nebraska Union to ask about some careers I am interested in.</li><li>Read about majors on the Undergraduate Bulletin</li><li>Meet with a professor or academic adviser in a major I am considering and find out more about the classes required and possible careers I can do with this major.</li><li>Shadow a professional in an area I want to learn more about.</li><li>Get involved in a student organization I care about.  Ask students in the organization about how they decided on their major.</li><li>Visit an academic adviser in the Explore Center to talk about possible majors and further goals in my process of choosing a major.</li><li>Take an exploratory class in a major you are considering.  Visit with an Explore Center adviser for suggestions or find on the website.</li></ul>';
     		break;
+        case mData.procons:
+          tabContent = '<p>Get out a piece of paper and make a list of the pros/likes and cons/dislikes of majors you are considering.  Examples of likes and dislikes could include working environment, autonomy, salary, your own interest level, skills needed, required courses, and possible careers.  For each major, ask yourself these questions:</p><ul><li>Do the pros outweigh the cons or vice versa?</li><li>Do you notice any patterns with what you put in your pro column and your con column (these are clues to what you value in a career/major)?</li><li>Could any of the cons be turned into pros?  How?</li><li>Are there any majors that had more pros than cons?  Would I be willing to look into those more as possible majors?</li></ul>';
+        break;
+        case mData.notsure:
+          tabContent = '<p>Make sure to click through all the rest of the resources in Find a Major for more help or contact an Explore Center adviser for help.</p>';
+        break;
     	}
     
         // Fade in and replace previous content
@@ -278,7 +284,7 @@ WDN.loadJQuery(function () {
         });
         
         // Add styles for selected
-        $(this).siblings('.fake-modal').removeClass('now-selected');
+        $('.fake-modal').removeClass('now-selected');
         $(this).addClass('now-selected');
         
     });
