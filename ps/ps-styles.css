@@ -632,7 +632,8 @@
     border-left: 2px solid;
     padding: 0 15px;
     width: 65%;
-    max-height: 330px;
+    height: 415px;
+    max-height: 415px;
     overflow: scroll;
     border-bottom-right-radius: 8px;
 }
