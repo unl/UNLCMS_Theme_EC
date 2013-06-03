@@ -29,6 +29,7 @@ ie7 .bp4-decoration,.ie8 .bp4-decoration{display:block;}
 [class$='-decoration']{display:none;}
 #maincontent{color:#535353;font-family:Georgia,'Bitstream Charter','Century Schoolbook L','Liberation Serif',Times,serif;font-size:14px;line-height:1.7;color:#787878;}#maincontent ul[class*="wdn-grid-set"],#maincontent ol[class*="wdn-grid-set"]{padding-left:0;list-style:none;}
 #maincontent .horizontal-separator{background:url(images/horizontal-separator.png) center bottom no-repeat;padding-bottom:50px;margin-bottom:10px;}
+#maincontent .splash-title{position:absolute;font-size:4em;top:40%;color:white;text-shadow:1px 1px 10px black;}
 #maincontent .center,#maincontent .wdn-center{text-align:center;}
 #maincontent .summary{font-size:1.6em;font-style:italic;}
 #maincontent .button{font-size:1em;background-color:#2c6d94;border-radius:40px;box-shadow:0 3px 0 rgba(108, 173, 211, 0.75);-webkit-box-shadow:0 3px 0 rgba(108, 173, 211, 0.75);color:#fff;padding:10px 25px;line-height:1.5;display:inline-block;text-align:center;font-family:"Lucida Grande",Verdana,Arial,sans-serif;}#maincontent .button:hover{background-color:#265f80;color:#fff;}
@@ -72,7 +73,7 @@ ie7 .bp4-decoration,.ie8 .bp4-decoration{display:block;}
 #maincontent .round-frame.large img{width:80%;box-shadow:0 0 0 10px rgba(86, 177, 119, 0.44999999999999996);-webkit-box-shadow:0 0 0 10px rgba(86, 177, 119, 0.44999999999999996);margin:10px;}
 #maincontent .student-photo{text-align:center;}#maincontent .student-photo:after{content:"";display:table;clear:both;}
 #maincontent .student-photo figcaption{display:none;}
-#maincontent .photo-wrapper{position:relative;}#maincontent .photo-wrapper .image-overlay{position:absolute;bottom:5px;margin-bottom:0;background-color:rgba(0, 0, 0, 0.75);width:100%;bottom:0;color:#fff;}
+#maincontent .photo-wrapper{position:relative;}#maincontent .photo-wrapper .image-overlay{position:absolute;bottom:5px;margin-bottom:0;background-color:rgba(0, 0, 0, 0.75);width:100%;bottom:0;color:#fff;padding:0.5em;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 #maincontent .faq-list .question{border-bottom:2px dashed #ebe7d5;font-size:1.2em;font-weight:bold;text-transform:uppercase;display:block;font-family:'Oswald',Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;}
 #maincontent .faq-list .answer{background-color:#fbfbf7;margin:0.5em 1em;padding:0.5em 0.5em 0.5em 2em;position:relative;}#maincontent .faq-list .answer:before{content:"\2713";background-color:#a7cee5;position:absolute;left:0;top:1em;line-height:1;padding:0.25em;color:#fbfbf7;}
 #maincontent .date{width:55px;float:left;text-transform:uppercase;line-height:1;font-family:Oswald,Helvetica,Arial,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;}#maincontent .date span{display:block;}
