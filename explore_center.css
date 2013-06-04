@@ -40,6 +40,7 @@ ie7 .bp4-decoration,.ie8 .bp4-decoration{display:block;}
 #maincontent .button.mini{font-size:0.8em;line-height:1;padding:5px 10px;height:auto;display:inline-block;}
 #maincontent .button.width-control{max-width:275px;}
 #maincontent .button.soothing{background-color:#43915f;box-shadow:0 3px 0 rgba(35, 75, 49, 0.75);-webkit-box-shadow:0 3px 0 rgba(35, 75, 49, 0.75);}#maincontent .button.soothing:hover{background-color:#3b8054;}
+#maincontent .button.primary{background-color:#ac0302;box-shadow:0 3px 0 rgba(96, 2, 1, 0.75);-webkit-box-shadow:0 3px 0 rgba(96, 2, 1, 0.75);}#maincontent .button.primary:hover{background-color:#9d0302;}
 #maincontent .grouped-header .sub-task{float:right;}
 #maincontent .small{font-size:0.85em;line-height:1.1em;}
 #maincontent .bump-down{margin-top:25px;}

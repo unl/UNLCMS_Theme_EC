@@ -117,6 +117,16 @@
                 background-color: darken(@color, 15%);
             }
         }
+
+        &.primary {
+            @color: #ac0302;
+            background-color: @color;
+            .box-shadow(0, 3px, 0, fadeout(darken(@color, 15%), 25%));
+
+            &:hover {
+                background-color: darken(@color, 3%);
+            }
+        }
     }
 
     .grouped-header {

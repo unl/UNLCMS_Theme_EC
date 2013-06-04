@@ -3,13 +3,13 @@
     <div class="relative-content">
         <div class="wdn-grid-set-thirds">
             <div class="wdn-col wdn-center">
-                <a href="find-your-major/" class="button soothing">Find your Major</a>
+                <a href="find-your-major/" class="button primary">Find your Major</a>
             </div>
             <div class="wdn-col wdn-center">
-                <a href="programs/pre-health" class="button soothing">Pre-Health</a>
+                <a href="programs/pre-health" class="button primary">Pre-Health</a>
             </div>
             <div class="wdn-col wdn-center">
-                <a href="programs/pre-law" class="button soothing">Pre-Law</a>
+                <a href="programs/pre-law" class="button primary">Pre-Law</a>
             </div>
         </div>
     </div>
