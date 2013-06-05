@@ -1,6 +1,5 @@
 WDN.loadJQuery(function () {  
     var $ = WDN.jQuery,
-      hash = window.location.hash,
       shift = 0,
     	options = {
           cycle: false,
@@ -16,9 +15,9 @@ WDN.loadJQuery(function () {
       sequence;
 		
 	  // Do we need the splash page?
-    if (hash == "") {
+    if (window.location.hash == "") {
   		// Fade in Splash intro
-  		$('#intro').delay(200).fadeIn('slow');
+  		$('#intro').hide().delay(200).fadeIn('slow');
   				
   		// Click button to start Sequence.js
   		$('#start').click( function() {
@@ -169,8 +168,11 @@ WDN.loadJQuery(function () {
 
       // Refresh tabbed content
       if ("onhashchange" in window) {
-        $('.ec-region-list>li').hide();
-        $('.ec-region-list>:first-child').show();
+        $('.ec-region-list>li').fadeOut(300, function() {
+          $('.ec-region-list>:first-child').show();
+        });
+
+        $('.fake-modal').removeClass('now-selected');
       }
 	}
 
@@ -179,7 +181,7 @@ WDN.loadJQuery(function () {
     	var tabKey = $(this).data('tab');
 
       $('.ec-region-article').fadeOut(300, function() {
-          $(tabKey).hide().delay(100).fadeIn(300);
+          $(tabKey).delay(100).fadeIn(300);
       });
         
       // Add styles for selected
