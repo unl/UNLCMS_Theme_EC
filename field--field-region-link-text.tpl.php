@@ -1,12 +1,12 @@
-<ul class="ec-region-list">
+<ul class="ec-section-list">
 <?php
 $i = 0;
 $nid = $element['#object']->nid;
 foreach ($items as $item) { ?>
-    <li class="ec-region-article" id="region-<?php echo $nid . '-' .$i; ?>">
-        <article>    
+    <li>
+        <a href="#region-<?php echo $nid . '-' .$i; ?>" class="ec-section-link">
             <?php print render($item['#markup']); ?>
-        </article>
+        </a>
     </li>
 <?php
     $i++;
