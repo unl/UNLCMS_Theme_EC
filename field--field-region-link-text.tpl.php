@@ -4,7 +4,7 @@ $i = 0;
 $nid = $element['#object']->nid;
 foreach ($items as $item) { ?>
     <li>
-        <a href="#region-<?php echo $nid . '-' .$i; ?>" class="ec-section-link">
+        <span class="fake-modal ec-section-link" data-tab="#region-<?php echo $nid . '-' .$i; ?>">
             <?php print render($item['#markup']); ?>
         </a>
     </li>
