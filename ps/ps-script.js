@@ -1,6 +1,5 @@
 WDN.loadJQuery(function () {  
     var $ = WDN.jQuery,
-      hash = window.location.hash,
       shift = 0,
     	options = {
           cycle: false,
@@ -16,9 +15,9 @@ WDN.loadJQuery(function () {
       sequence;
 		
 	  // Do we need the splash page?
-    if (hash == "") {
+    if (window.location.hash == "") {
   		// Fade in Splash intro
-  		$('#intro').delay(200).fadeIn('slow');
+  		$('#intro').hide().delay(200).fadeIn('slow');
   				
   		// Click button to start Sequence.js
   		$('#start').click( function() {
