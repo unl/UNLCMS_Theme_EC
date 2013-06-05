@@ -29,7 +29,7 @@
 			<span class="sequence-next">&gt;</span>
         </div>
     </section>
-    <div id="intro" style="display: block;">
+    <div id="intro">
         <h1><?php render($title); ?></h1>
         <p class="sub-text">
             <?php render($content['body']['#items'][0]['summary']); ?>
