@@ -169,8 +169,11 @@ WDN.loadJQuery(function () {
 
       // Refresh tabbed content
       if ("onhashchange" in window) {
-        $('.ec-region-list>li').hide();
-        $('.ec-region-list>:first-child').show();
+        $('.ec-region-list>li').fadeOut(300, function() {
+          $('.ec-region-list>:first-child').show();
+        });
+
+        $('.fake-modal').removeClass('now-selected');
       }
 	}
 
@@ -179,7 +182,7 @@ WDN.loadJQuery(function () {
     	var tabKey = $(this).data('tab');
 
       $('.ec-region-article').fadeOut(300, function() {
-          $(tabKey).hide().delay(100).fadeIn(300);
+          $(tabKey).delay(100).fadeIn(300);
       });
         
       // Add styles for selected
