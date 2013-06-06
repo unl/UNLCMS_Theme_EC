@@ -31,12 +31,12 @@
     </section>
     <div id="intro" data-intro="youbet">
         <h1><?php print render($title); ?></h1>
-        <p class="sub-text">
+        <div class="sub-text">
             <?php print render($content['body']['#items'][0]['summary']); ?>
-        </p>
-        <p class="main-text">
+        </div>
+        <div class="main-text">
             <?php print render($content['body']); ?>
-        </p>
+        </div>
         <span id="start">→</span>
     </div>
 </section>
