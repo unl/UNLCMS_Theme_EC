@@ -183,7 +183,7 @@ WDN.loadJQuery(function () {
           $('.ec-region-list>:first-child').show();
         });
         $('.fake-modal').removeClass('now-selected');
-        $('.fake-modal:first-child').addClass('now-selected');
+        $('.ec-section-list li:first-child .fake-modal').addClass('now-selected');
       }
 	}
 
