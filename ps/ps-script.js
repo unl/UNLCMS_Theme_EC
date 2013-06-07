@@ -30,6 +30,17 @@ WDN.loadJQuery(function () {
   			sequence = $("#sequence").sequence(options).data("sequence");
   		});
 	  } else {
+
+      // Put bar in correct position
+      shift = -45 * (window.location.hash.replace(/#frame-/gi, '') - 1);
+      $("#bar, #needle").css({
+              '-webkit-transform': 'rotate(' + shift + 'deg)',
+              '-moz-transform': 'rotate(' + shift + 'deg)',
+              '-ms-transform': 'rotate(' + shift + 'deg)',
+              '-o-transform': 'rotate(' + shift + 'deg)',
+              'transform': 'rotate(' + shift + 'deg)'
+      });
+
 		  $('#compass-nav').delay(750).fadeIn('slow');
 		  sequence = $("#sequence").sequence(options).data("sequence");
     }
@@ -171,17 +182,18 @@ WDN.loadJQuery(function () {
         $('.ec-region-list>li').fadeOut(300, function() {
           $('.ec-region-list>:first-child').show();
         });
-
         $('.fake-modal').removeClass('now-selected');
+        $('.fake-modal:first-child').addClass('now-selected');
       }
 	}
 
     /* 'Fake' modal window functionality */
     $('span.fake-modal').click( function() {	
-    	var tabKey = $(this).data('tab');
+    	var nowSel = $(this).data('tab'),
+          prevSel = $('.now-selected').data('tab');
 
-      $('.ec-region-article').fadeOut(300, function() {
-          $(tabKey).delay(100).fadeIn(300);
+      $(prevSel).fadeOut(300, function() {
+          $(nowSel).fadeIn(300);
       });
         
       // Add styles for selected
