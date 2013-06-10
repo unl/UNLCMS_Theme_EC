@@ -188,7 +188,7 @@ WDN.loadJQuery(function () {
 	}
 
     /* 'Fake' modal window functionality */
-    $('span.fake-modal').click( function() {	
+    $('span.fake-modal').on('click', function() {	
     	var nowSel = $(this).data('tab'),
           prevSel = $('.now-selected').data('tab');
 
