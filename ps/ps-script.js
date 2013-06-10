@@ -179,11 +179,12 @@ WDN.loadJQuery(function () {
 
       // Refresh tabbed content
       if ("onhashchange" in window) {
+        var thisSlide = window.location.hash;
         $('.ec-region-list>article').fadeOut(300, function() {
-          $('.ec-region-list>:first-child').show();
+          $(thisSlide + ' .ec-region-list>:first-child').show();
         });
         $('.fake-modal').removeClass('now-selected');
-        $('.ec-section-list>:first-child .fake-modal').addClass('now-selected');
+        $(thisSlide + ' .ec-section-list>:first-child .fake-modal').addClass('now-selected');
       }
 	}
 
