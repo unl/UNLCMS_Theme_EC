@@ -178,27 +178,28 @@ WDN.loadJQuery(function () {
   		}
 
       // Refresh tabbed content
-      if ("onhashchange" in window) {
+      var originalHash = window.location.hash;
+      $(window).on('hashchange', function(e) {
+        e.preventDefault();
         var thisSlide = window.location.hash;
         console.log(thisSlide);
-        $('.ec-region-list > article').not(thisSlide + ' .ec-region-list > .ec-region-article:first').fadeOut(300);
+        $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
         $('.fake-modal').removeClass('now-selected');
-        $(thisSlide + ' .ec-section-list > li:first .fake-modal').addClass('now-selected');
-      }
+        $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
+      });
 	}
 
     /* 'Fake' modal window functionality */
-    $('span.fake-modal').on('click', function() {	
+    $('.fake-modal').on('click', function(e) {
     	var nowSel = $(this).data('tab'),
           prevSel = $('.now-selected').data('tab');
-
 
       $(prevSel).fadeOut(300, function() {
           $(nowSel).fadeIn(300);
       });
         
       // Add styles for selected
-      $('.fake-modal').removeClass('now-selected');
+      $('.fake-modal.now-selected').removeClass('now-selected');
       $(this).addClass('now-selected');
         
     });
