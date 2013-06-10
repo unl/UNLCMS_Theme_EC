@@ -13,7 +13,7 @@ foreach ($items as $item) {
     <li>
         <span class="fake-modal ec-section-link <?php echo $class; ?>" data-tab="#region-<?php echo $nid . '-' .$i; ?>">
             <?php print render($item['#markup']); ?>
-        </a>
+        </span>
     </li>
 <?php
     $i++;
