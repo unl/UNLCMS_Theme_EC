@@ -179,7 +179,7 @@ WDN.loadJQuery(function () {
 
       // Refresh tabbed content
       if ("onhashchange" in window) {
-        $('.ec-region-list>li').fadeOut(300, function() {
+        $('.ec-region-list>article').fadeOut(300, function() {
           $('.ec-region-list>:first-child').show();
         });
         $('.fake-modal').removeClass('now-selected');
@@ -191,6 +191,7 @@ WDN.loadJQuery(function () {
     $('span.fake-modal').on('click', function() {	
     	var nowSel = $(this).data('tab'),
           prevSel = $('.now-selected').data('tab');
+
 
       $(prevSel).fadeOut(300, function() {
           $(nowSel).fadeIn(300);
