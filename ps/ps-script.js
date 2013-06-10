@@ -180,11 +180,11 @@ WDN.loadJQuery(function () {
       // Refresh tabbed content
       if ("onhashchange" in window) {
         var thisSlide = window.location.hash;
-        $('.ec-region-list>article').fadeOut(300, function() {
-          $(thisSlide + ' .ec-region-list>:first-child').show();
+        $('.ec-region-list > article').fadeOut(300, function() {
+          $(thisSlide + ' .ec-region-list > .ec-region-article:first').show();
         });
         $('.fake-modal').removeClass('now-selected');
-        $(thisSlide + ' .ec-section-list>:first-child .fake-modal').addClass('now-selected');
+        $(thisSlide + ' .ec-section-list > li:first .fake-modal').addClass('now-selected');
       }
 	}
 
