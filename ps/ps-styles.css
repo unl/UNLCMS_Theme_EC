@@ -668,7 +668,7 @@
 .fake-modal {
 	display: block;
     cursor: pointer;
-    color: rgb(128, 152, 172);
+    color: rgb(70, 100, 124);
     border-radius: 8px;
     padding: 2px 5px;
 	
@@ -681,7 +681,7 @@
 
 #maincontent
 .fake-modal:hover {
-	color: rgb(70,100,124);
+	color: rgb(46, 70, 90);
 }
 
 #maincontent
