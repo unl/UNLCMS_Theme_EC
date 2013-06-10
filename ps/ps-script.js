@@ -181,8 +181,8 @@ WDN.loadJQuery(function () {
       var originalHash = window.location.hash;
       $(window).on('hashchange', function(e) {
         e.preventDefault();
-        var thisSlide = window.location.hash;
         $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
+        $('.animate-in .ec-region-list > .ec-region-article:first').fadeIn(300);
         $('.fake-modal').removeClass('now-selected');
         $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
       });
