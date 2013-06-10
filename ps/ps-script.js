@@ -182,7 +182,6 @@ WDN.loadJQuery(function () {
       $(window).on('hashchange', function(e) {
         e.preventDefault();
         var thisSlide = window.location.hash;
-        console.log(thisSlide);
         $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
         $('.fake-modal').removeClass('now-selected');
         $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
