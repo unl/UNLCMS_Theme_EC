@@ -32,15 +32,8 @@ WDN.loadJQuery(function () {
 	  } else {
 
       // Put bar in correct position
-      shift = -45 * (window.location.hash.replace(/#frame-/gi, '') - 1);
-      $("#bar, #needle").css({
-              '-webkit-transform': 'rotate(' + shift + 'deg)',
-              '-moz-transform': 'rotate(' + shift + 'deg)',
-              '-ms-transform': 'rotate(' + shift + 'deg)',
-              '-o-transform': 'rotate(' + shift + 'deg)',
-              'transform': 'rotate(' + shift + 'deg)'
-      });
-
+      var marker = parseInt(window.location.hash.replace(/#frame-/gi, '')) + 48;
+      frameChange(marker);
 		  $('#compass-nav').delay(750).fadeIn('slow');
 		  sequence = $("#sequence").sequence(options).data("sequence");
     }
