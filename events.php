@@ -2,7 +2,7 @@
     <div class="wdn-inner-wrapper">
         <h2 class="small grouped-header ec-heading">
             Upcoming Events
-            <a href="http://events.unl.edu/explorecenter/upcoming/" class="sub-task">View all upcoming events</a>
+            <a href="events" class="sub-task">View all upcoming events</a>
         </h2>
         <ul class="bp1-wdn-grid-set-halves bp2-wdn-grid-set-fourths center-adjust">
 <?php

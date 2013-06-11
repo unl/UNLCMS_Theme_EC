@@ -6,7 +6,7 @@
                     <?php print $header; ?>
             </div>
             <div class="bp2-wdn-col-two-thirds">
-                <div class="bp1-wdn-grid-set-halves">
+                <div class="bp1-wdn-grid-set-halves bp1-wrapping">
                     <?php print $rows; ?>
                 </div>
             </div>

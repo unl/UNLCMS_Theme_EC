@@ -29,4 +29,14 @@
 			<span class="sequence-next">&gt;</span>
         </div>
     </section>
+    <div id="intro" data-intro="youbet">
+        <h1><?php print render($title); ?></h1>
+        <div class="sub-text">
+            <?php print render($content['body']['#items'][0]['summary']); ?>
+        </div>
+        <div class="main-text">
+            <?php print render($content['body']); ?>
+        </div>
+        <span id="start">→</span>
+    </div>
 </section>

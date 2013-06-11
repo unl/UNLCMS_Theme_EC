@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="wdn-col">
-                <h2 class="ec-heading">
+                <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_overview']["#title"]; ?>
                 </h2>
@@ -55,32 +55,15 @@
 <div class="wdn-band">
     <section class="wdn-inner-wrapper horizontal-separator" id="coursework">
         <div class="wdn-grid-set">
-            <?php if (isset($content['field_entrance_exams'])) : ?>
-                <div class="wdn-grid-set">
-                    <div class="bp2-wdn-col-three-sevenths">
-                        <h2 class="ec-heading flag">
-                            <span><?php print $title; ?></span>
-                            <?php print $content['field_coursework']["#title"]; ?>
-                        </h2>
-                    </div>
-                    <div class="bp2-wdn-col-four-sevenths">
-                        <?php print render($content['field_coursework']); ?>
-                    </div>
-                </div>
-            <?php else : ?>
-                <div class="bp2-wdn-col-three-sevenths">
-                    <h2 class="ec-heading flag">
-                        <span><?php print $title; ?></span>
-                        <?php print $content['field_coursework']["#title"]; ?>
-                    </h2>
+            <div class="wdn-col-full">
+                <h2 class="ec-heading flag">
+                    <span><?php print $title; ?></span>
+                    <?php print $content['field_coursework']["#title"]; ?>
+                </h2>
+                <div class="csscolumns wdn-two-flow-columns">
                     <?php print render($content['field_coursework']); ?>
                 </div>
-                <div class="bp2-wdn-col-four-sevenths">
-                    <aside class="student-story">
-                        <?php print views_embed_view('random_student_story','pre_health_band_block', $node->nid); ?>
-                    </aside>
-                </div>
-            <?php endif; ?>
+            </div>
         </div>
     </section>
 </div>
@@ -88,34 +71,36 @@
 <div class="wdn-band">
     <section class="wdn-inner-wrapper horizontal-separator" id="professional-degrees">
         <div class="wdn-grid-set">
-            <div class="bp2-wdn-col-three-sevenths">
+            <div class="wdn-col-full">
                 <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     Professional Degrees <?php // The field name is different, so just hard code for now ?>
                 </h2>
-            </div>
-            <div class="bp2-wdn-col-four-sevenths">
-                <?php print render($content['field_professional_degrees']); ?>
+                <div class="csscolumns wdn-two-flow-columns">
+                    <?php print render($content['field_professional_degrees']); ?>
+                </div>
             </div>
         </div>
     </section>
 </div>
 <?php endif; ?>
+<aside class="wdn-band student-story">
+    <div class="wdn-inner-wrapper">
+        <?php print views_embed_view('random_student_story','pre_health_band_block', $node->nid); ?>
+    </div>
+</aside>
 <?php if (isset($content['field_entrance_exams'])) : ?>
 <div class="wdn-band">
     <div class="wdn-inner-wrapper horizontal-separator">
         <section class="wdn-grid-set" id="entrance-exams">
-            <div class="bp2-wdn-col-three-sevenths">
+            <div class="wdn-col-full">
                 <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_entrance_exams']["#title"]; ?>
                 </h2>
-                <?php print render($content['field_entrance_exams']); ?>
-            </div>
-            <div class="bp2-wdn-col-four-sevenths">
-                <aside class="student-story">
-                    <?php print views_embed_view('random_student_story','pre_health_band_block', $node->nid); ?>
-                </aside>
+                <div class="csscolumns wdn-two-flow-columns">
+                    <?php print render($content['field_entrance_exams']); ?>
+                </div>
             </div>
         </section>
     </div>
@@ -124,15 +109,15 @@
 <?php if (isset($content['field_application_information'])) : ?>
 <div class="wdn-band">
     <div class="wdn-inner-wrapper horizontal-separator">
-        <section class="wdn-grid-set" id="entrance-exams">
-            <div class="bp2-wdn-col-three-sevenths">
+        <section class="wdn-grid-set" id="application-info">
+            <div class="wdn-col-full">
                 <h2 class="ec-heading flag">
                     <span><?php print $title; ?></span>
                     <?php print $content['field_application_information']["#title"]; ?>
                 </h2>
-            </div>
-            <div class="bp2-wdn-col-four-sevenths">
-                <?php print render($content['field_application_information']); ?>
+                <div class="csscolumns wdn-two-flow-columns">
+                    <?php print render($content['field_application_information']); ?>
+                </div>
             </div>
         </section>
     </div>
@@ -222,7 +207,7 @@
                         navBar.css({'position' : 'fixed', 'top' : (navBarMarginTop * -1) + 'px', 'width' : loadedWidth, 'margin-top': navBarMarginTop});
                         refDiv.css({'margin-bottom' : navBarHeight + 'px'}); // shim
                     } else {
-                        navBar.css({'position' : 'initial', 'width' : 'auto', 'margin-top' : '2em'});
+                        navBar.css({'position' : 'static', 'width' : 'auto', 'margin-top' : '2em'});
                         refDiv.css({'margin-bottom' : 'auto'}); // shim
                     }
                 }
