@@ -1,6 +1,7 @@
 WDN.loadJQuery(function () {  
   var $ = WDN.jQuery,
   shift = 0,
+  hashSwitch = false,
   options = {
     cycle: false,
 	  hashTags: true,
@@ -66,8 +67,7 @@ WDN.loadJQuery(function () {
     var keyCode,
         key = {left: 37, right: 39, one: 49, two: 50, three: 51, four: 52, five: 53 },
         currentFrame = $('.sequence-pagination > li.current > .milestone').html(),
-        frameId = $('.animate-in').attr("id"),
-        hashSwitch = false;
+        frameId = $('.animate-in').attr("id");
 
     // Find out if e = keyCode or event
     if (isNaN(e)) {
@@ -173,16 +173,6 @@ WDN.loadJQuery(function () {
   		break;
 		}
 
-    // Refresh tabbed content
-    $(window).on('hashchange', function(e) {
-      e.preventDefault();
-      $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
-      $('.animate-in .ec-region-list > .ec-region-article:first').fadeIn(300);
-      $('.fake-modal').removeClass('now-selected');
-      $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
-      hashSwitch = true;
-    });
-
     // Trigger this if not loading splash page
     if (hashSwitch === false) {
       $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
@@ -190,9 +180,18 @@ WDN.loadJQuery(function () {
       $('.fake-modal').removeClass('now-selected');
       $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
       $('.animate-in .ec-section-list > li:first .fake-modal').trigger('click');
-      console.log('This is not the splash page');
+      console.log('The functions should have fired.');
     }
 	}
+
+  // Refresh tabbed content
+  $(window).on('hashchange', function(e) {
+    e.preventDefault();
+    $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
+    $('.animate-in .ec-region-list > .ec-region-article:first').fadeIn(300);
+    $('.fake-modal').removeClass('now-selected');
+    $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
+  });
 
   /* 'Fake' modal window functionality */
   $('.fake-modal').on('click', function(e) {
@@ -200,7 +199,7 @@ WDN.loadJQuery(function () {
         prevSel = $('.now-selected').data('tab');
 
     $(prevSel).fadeOut(300, function() {
-        $(nowSel).fadeIn(300);
+      $(nowSel).fadeIn(300);
     });
         
     // Add styles for selected
