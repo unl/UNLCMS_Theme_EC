@@ -189,6 +189,8 @@ WDN.loadJQuery(function () {
       $('.animate-in .ec-region-list > .ec-region-article:first').fadeIn(300);
       $('.fake-modal').removeClass('now-selected');
       $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
+      $('.animate-in .ec-section-list > li:first .fake-modal').trigger('click');
+      console.log('This is not the splash page');
     }
 	}
 
