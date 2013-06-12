@@ -180,7 +180,7 @@ WDN.loadJQuery(function () {
       $('.fake-modal').removeClass('now-selected');
       $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
       $('.animate-in .ec-section-list > li:first .fake-modal').trigger('click');
-      console.log('The functions should have fired.');
+      WDN.log('The functions should have fired.');
     }
 	}
 
