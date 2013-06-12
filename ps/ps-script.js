@@ -174,7 +174,7 @@ WDN.loadJQuery(function () {
 		}
 
     // Trigger this if not loading splash page
-    if (hashSwitch === false) {
+    if ($('.animate-in').length > 0) {
       $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
       $('.animate-in .ec-region-list > .ec-region-article:first').fadeIn(300);
       $('.fake-modal').removeClass('now-selected');
