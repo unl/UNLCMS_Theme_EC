@@ -503,14 +503,13 @@
 
 .ribbon .ribbon-content,
 .ribbon:before, .ribbon:after {
-    background: rgb(125,183,224);
+    background: rgb(126,150,167);
     background: url('kindajean.png'), -moz-linear-gradient(top,  rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
     background: url('kindajean.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(51, 109, 150)), color-stop(100%,rgb(18, 53, 83)));
     background: url('kindajean.png'), -webkit-linear-gradient(top, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
     background: url('kindajean.png'), -o-linear-gradient(top, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
     background: url('kindajean.png'), -ms-linear-gradient(top, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
     background: url('kindajean.png'), linear-gradient(to bottom, rgb(51, 109, 150) 0%, rgb(18, 53, 83) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db7e0', endColorstr='#427aaa',GradientType=0 );
     -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 6px -1px;
     -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 6px -1px;
     box-shadow: rgba(0, 0, 0, 0.4) 0 2px 6px -1px;
