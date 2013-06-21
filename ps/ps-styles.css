@@ -223,7 +223,7 @@
   background: -o-linear-gradient(top,  #b7ed90 1%,#99c976 100%);
   background: -ms-linear-gradient(top,  #b7ed90 1%,#99c976 100%);
   background: linear-gradient(to bottom,  #b7ed90 1%,#99c976 100%);
-  opacity: 0;
+  
   
   -webkit-animation: reveal 350ms linear 1;
   -webkit-animation-fill-mode: forwards;
