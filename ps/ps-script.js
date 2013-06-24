@@ -178,10 +178,9 @@ WDN.loadJQuery(function () {
     // Trigger this if not loading splash page
     if ($('.animate-in').length > 0) {
       $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').hide();
-      $('.animate-in .ec-region-list > .ec-region-article:first').hide().fadeIn(300);
+      $('.animate-in .ec-region-list > .ec-region-article:first').fadeIn(300);
       $('.fake-modal').removeClass('now-selected');
       $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
-      WDN.log('The functions should have fired.');
     }
 	}
 
@@ -189,9 +188,10 @@ WDN.loadJQuery(function () {
   $(window).on('hashchange', function(e) {
     e.preventDefault();
     $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
-    $('.animate-in .ec-region-list > .ec-region-article:first').fadeIn(300);
+    $('.animate-in .ec-region-list > .ec-region-article:first').hide().fadeIn(300);
     $('.fake-modal').removeClass('now-selected');
     $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
+    WDN.log('These hashchange functions have fired.');
   });
 
   /* 'Fake' modal window functionality */
