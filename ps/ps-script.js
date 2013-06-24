@@ -199,10 +199,10 @@ WDN.loadJQuery(function () {
   $('.fake-modal').on('click', function(e) {
   	var nowSel = $(this).data('tab'),
         prevSel = $('.now-selected').data('tab');
-    console.log('Fading-out id: ' + prevSel);
+    WDN.log('Fading-out id: ' + prevSel);
     $(prevSel).fadeOut(300, function() {
       $(nowSel).fadeIn(300);
-      console.log('Faded-in id: ' + nowSel);
+      WDN.log('Faded-in id: ' + nowSel);
     });
         
     // Add styles for selected
