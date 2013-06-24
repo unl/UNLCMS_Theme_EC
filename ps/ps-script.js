@@ -78,7 +78,7 @@ WDN.loadJQuery(function () {
       keyCode = e;
     }
 
-    // Trigger this if not loading splash page
+    /* Trigger this if not loading splash page
     if ($('.animate-in').length > 0) {
       $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').hide();
       $('.animate-in .ec-region-list > .ec-region-article:first').fadeIn(300);
@@ -86,7 +86,7 @@ WDN.loadJQuery(function () {
       $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
       WDN.log('The splash page has not been loaded.');
     }
-
+    */
   	switch (keyCode) {
   		case key.left:
         if (frameId !== 'frame-1') {
