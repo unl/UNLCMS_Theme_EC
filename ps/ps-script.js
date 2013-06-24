@@ -33,10 +33,12 @@ WDN.loadJQuery(function () {
   } else {
 
     // Put bar in correct position
-    var marker = parseInt(window.location.hash.replace(/#frame-/gi, '')) + 48;
-    frameChange(marker);
-	  $('#compass-nav').delay(750).fadeIn('slow');
+    var frameNum = parseInt(window.location.hash.replace(/#frame-/gi, ''));
+    var marker = frameNum + 48;
+	  $('#compass-nav').stop().delay(750).fadeIn('slow');
+    window.location.hash = 'frame-' + frameNum;
 	  sequence = $("#sequence").sequence(options).data("sequence");
+    frameChange(marker);
   }
 
   // Key press listener
