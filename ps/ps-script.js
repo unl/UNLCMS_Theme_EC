@@ -36,9 +36,9 @@ WDN.loadJQuery(function () {
     var frameNum = parseInt(window.location.hash.replace(/#frame-/gi, ''));
     var marker = frameNum + 48;
 	  $('#compass-nav').stop().delay(750).fadeIn('slow');
-    window.location.hash = 'frame-' + frameNum;
 	  sequence = $("#sequence").sequence(options).data("sequence");
     frameChange(marker);
+    location.reload();
   }
 
   // Key press listener
@@ -186,7 +186,7 @@ WDN.loadJQuery(function () {
 	}
 
   // Refresh tabbed content
-  $(window).on('hashchange', function(e) {
+  $(window).on('hashchange load', function(e) {
     e.preventDefault();
     $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
     $('.animate-in .ec-region-list > .ec-region-article:first').hide().fadeIn(300);
