@@ -38,7 +38,6 @@ WDN.loadJQuery(function () {
 	  $('#compass-nav').stop().delay(750).fadeIn('slow');
 	  sequence = $("#sequence").sequence(options).data("sequence");
     frameChange(marker);
-    location.reload();
   }
 
   // Key press listener
