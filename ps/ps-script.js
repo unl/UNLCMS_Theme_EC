@@ -178,6 +178,16 @@ WDN.loadJQuery(function () {
   // Refresh tabbed content
   $(window).on('hashchange load', function(e) {
     e.preventDefault();
+
+    // Trim and inject h2 for mobile
+    $('.fake-modal').each( function(i) {
+       var tabTitle = $.trim($(this).text());
+       
+       WDN.log('Tab title is: ' + tabTitle);
+
+    });
+
+    // Load the content
     $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
     $('.animate-in .ec-region-list > .ec-region-article:first').hide().fadeIn(300);
     $('.fake-modal').removeClass('now-selected');
@@ -187,12 +197,7 @@ WDN.loadJQuery(function () {
   /* 'Fake' modal window functionality */
   $('.fake-modal').on('click', function(e) {
   	var nowSel = $(this).data('tab'),
-        prevSel = $('.now-selected').data('tab'),
-        tabTitle = $(this).text();
-
-    // Trim and inject h2
-    tabTitle = $.trim(tabTitle);
-    WDN.log('Tab title is: ' + tabTitle);
+        prevSel = $('.now-selected').data('tab');
 
     $(prevSel).stop().fadeOut(300, function() {
       $(nowSel).stop().fadeIn(300);
