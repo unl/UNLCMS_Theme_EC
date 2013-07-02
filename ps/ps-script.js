@@ -187,7 +187,11 @@ WDN.loadJQuery(function () {
   /* 'Fake' modal window functionality */
   $('.fake-modal').on('click', function(e) {
   	var nowSel = $(this).data('tab'),
-        prevSel = $('.now-selected').data('tab');
+        prevSel = $('.now-selected').data('tab'),
+        tabTitle = $(this).text();
+
+    WDN.log('Tab title is: ' + tabTitle);
+
     $(prevSel).stop().fadeOut(300, function() {
       $(nowSel).stop().fadeIn(300);
     });
