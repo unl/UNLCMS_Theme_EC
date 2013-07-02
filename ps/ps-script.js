@@ -1,5 +1,6 @@
 WDN.loadJQuery(function () {  
   var $ = WDN.jQuery,
+  onlyOnce = true,
   shift = 0,
   hashSwitch = false,
   options = {
@@ -180,12 +181,16 @@ WDN.loadJQuery(function () {
     e.preventDefault();
 
     // Trim and inject h2 for mobile
-    $('.fake-modal').each( function(i) {
-       var tabTitle = $.trim($(this).text());
-       
-       WDN.log('Tab title is: ' + tabTitle);
+    if (onlyOnce == true) {
+        $('.fake-modal').each( function(i) {
+           var tabTitle = $.trim($(this).text()),
+               tabContent = $(this).data('tab');
 
-    });
+
+           WDN.log('Tab title is: ' + tabTitle);
+           onlyOnce = false;
+        });
+    }
 
     // Load the content
     $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
