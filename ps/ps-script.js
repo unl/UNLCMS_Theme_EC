@@ -185,8 +185,8 @@ WDN.loadJQuery(function () {
         $('.fake-modal').each( function(i) {
            var tabTitle = $.trim($(this).text()),
                tabContent = $(this).data('tab');
-
-
+               
+           $(tabContent).prepend('<h2 class="tab-title">' + tabTitle + '</h2>')
            WDN.log('Tab title is: ' + tabTitle);
            onlyOnce = false;
         });
