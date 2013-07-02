@@ -190,6 +190,8 @@ WDN.loadJQuery(function () {
         prevSel = $('.now-selected').data('tab'),
         tabTitle = $(this).text();
 
+    // Trim and inject h2
+    tabTitle = $.trim(tabTitle);
     WDN.log('Tab title is: ' + tabTitle);
 
     $(prevSel).stop().fadeOut(300, function() {
