@@ -666,11 +666,15 @@
 #maincontent
 .ec-region-list {
   list-style: none;
+  position: relative;
+  height: inherit;
 }
 
 #maincontent
 .ec-region-list > article {
   display: none;
+  position: absolute;
+  top: 20%;
 }
 
 #maincontent
