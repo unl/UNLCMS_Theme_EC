@@ -19,13 +19,13 @@ WDN.loadJQuery(function () {
   // Do we need the splash page?
   if (window.location.hash == "") {
 		// Fade in Splash intro
-		$('#intro').hide().delay(200).fadeIn('slow');
+		$('#intro').hide().delay(200).stop(true, false).fadeIn('slow');
   				
 		// Click button to start Sequence.js
 		$('#start').click( function() {
-			$('#intro').fadeOut('slow', function() {
-				$('#compass-nav').fadeIn('slow');
-				$('.sequence-next').fadeIn('slow');
+			$('#intro').stop(true, false).fadeOut('slow', function() {
+				$('#compass-nav').stop(true, false).fadeIn('slow');
+				$('.sequence-next').stop(true, false).fadeIn('slow');
         window.location.hash = 'frame-1';
 			});
   			
@@ -36,7 +36,7 @@ WDN.loadJQuery(function () {
     // Put bar in correct position
     var frameNum = parseInt(window.location.hash.replace(/#frame-/gi, ''));
     var marker = frameNum + 48;
-	  $('#compass-nav').stop().delay(750).fadeIn('slow');
+	  $('#compass-nav').stop().delay(750).stop(true, false).fadeIn('slow');
 	  sequence = $("#sequence").sequence(options).data("sequence");
     frameChange(marker);
   }
@@ -83,11 +83,11 @@ WDN.loadJQuery(function () {
         if (frameId !== 'frame-1') {
     			shift = -45 * (currentFrame - 2); 
      			if (shift == -180) {
-     				$('.sequence-next').fadeOut(300);
+     				$('.sequence-next').stop(true, false).fadeOut(300);
      			} else if (shift == 0) {
      				$('.sequence-prev').fadeOut(300);
      			} else {
-     				$('.sequence-next, .sequence-prev').fadeIn(300).animate({'opacity': '1'});
+     				$('.sequence-next, .sequence-prev').stop(true, false).fadeIn(300).animate({'opacity': '1'});
      			}
      			
           if (shift == 45) { shift = -180; }
@@ -105,11 +105,11 @@ WDN.loadJQuery(function () {
         if (frameId !== 'frame-5') {
     			shift = -45 * currentFrame;
      			if (shift == -180) {
-     				$('.sequence-next').fadeOut(300);
+     				$('.sequence-next').stop(true, false).fadeOut(300);
      			} else if (shift == 0) {
-     				$('.sequence-prev').fadeOut(300);
+     				$('.sequence-prev').stop(true, false).fadeOut(300);
      			} else {
-     				$('.sequence-next, .sequence-prev').fadeIn(300).animate({'opacity': '1'});
+     				$('.sequence-next, .sequence-prev').stop(true, false).fadeIn(300).animate({'opacity': '1'});
      			}
      			if (shift == -225) { shift = 0; }
      			$("#bar, #needle").css({
@@ -129,8 +129,8 @@ WDN.loadJQuery(function () {
       			'-o-transform': 'rotate(0deg)',
       			'transform': 'rotate(0deg)'
     			});
-    			$('.sequence-prev').fadeOut(300);
-    			$('.sequence-next').fadeIn(300).animate({'opacity': '1'});
+    			$('.sequence-prev').stop(true, false).fadeOut(300);
+    			$('.sequence-next').stop(true, false).fadeIn(300).animate({'opacity': '1'});
   		break;
   		case key.two:
     			$("#bar, #needle").css({
@@ -140,7 +140,7 @@ WDN.loadJQuery(function () {
       			'-o-transform': 'rotate(-45deg)',
       			'transform': 'rotate(-45deg)'
     			});
-    			$('.sequence-next, .sequence-prev').fadeIn(300).animate({'opacity': '1'});
+    			$('.sequence-next, .sequence-prev').stop(true, false).fadeIn(300).animate({'opacity': '1'});
   		break;
   		case key.three:
     			$("#bar, #needle").css({
@@ -150,7 +150,7 @@ WDN.loadJQuery(function () {
       			'-o-transform': 'rotate(-90deg)',
       			'transform': 'rotate(-90deg)'
     			});
-    			$('.sequence-next, .sequence-prev').fadeIn(300).animate({'opacity': '1'});
+    			$('.sequence-next, .sequence-prev').stop(true, false).fadeIn(300).animate({'opacity': '1'});
   		break;
   		case key.four:
     			$("#bar, #needle").css({
@@ -160,7 +160,7 @@ WDN.loadJQuery(function () {
       			'-o-transform': 'rotate(-135deg)',
       			'transform': 'rotate(-135deg)'
     			});
-    			$('.sequence-next, .sequence-prev').fadeIn(300).animate({'opacity': '1'});
+    			$('.sequence-next, .sequence-prev').stop(true, false).fadeIn(300).animate({'opacity': '1'});
   		break;
   		case key.five:
     			$("#bar, #needle").css({
@@ -170,8 +170,8 @@ WDN.loadJQuery(function () {
       			'-o-transform': 'rotate(-180deg)',
       			'transform': 'rotate(-180deg)'
     			});
-    			$('.sequence-next').fadeOut(300);
-    			$('.sequence-prev').fadeIn(300).animate({'opacity': '1'});
+    			$('.sequence-next').stop(true, false).fadeOut(300);
+    			$('.sequence-prev').stop(true, false).fadeIn(300).animate({'opacity': '1'});
   		break;
 		}
 	}
@@ -185,7 +185,7 @@ WDN.loadJQuery(function () {
         $('.fake-modal').each( function(i) {
            var tabTitle = $.trim($(this).text()),
                tabContent = $(this).data('tab');
-               
+
            $(tabContent).prepend('<h2 class="tab-title">' + tabTitle + '</h2>')
            WDN.log('Tab title is: ' + tabTitle);
            onlyOnce = false;
@@ -193,8 +193,8 @@ WDN.loadJQuery(function () {
     }
 
     // Load the content
-    $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').fadeOut(300);
-    $('.animate-in .ec-region-list > .ec-region-article:first').hide().fadeIn(300);
+    $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').stop(true, false).fadeOut(300);
+    $('.animate-in .ec-region-list > .ec-region-article:first').hide().stop(true, false).fadeIn(300);
     $('.fake-modal').removeClass('now-selected');
     $('.animate-in .ec-section-list > li:first .fake-modal').addClass('now-selected');
   });
@@ -204,8 +204,8 @@ WDN.loadJQuery(function () {
   	var nowSel = $(this).data('tab'),
         prevSel = $('.now-selected').data('tab');
 
-    $(prevSel).stop().fadeOut(300, function() {
-      $(nowSel).stop().fadeIn(300);
+    $(prevSel).stop(true, false).fadeOut(300, function() {
+      $(nowSel).stop(true, false).fadeIn(300);
     });
         
     // Add styles for selected
