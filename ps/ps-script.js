@@ -1,13 +1,23 @@
 WDN.loadJQuery(function () {  
+  var $ = WDN.jQuery;
   WDN.loadJS('sites/all/themes/UNLCMS_Theme_EC/ps/jquery.ba-hashchange.min.js', function(){
     WDN.loadJS('sites/all/themes/UNLCMS_Theme_EC/ps/jquery.sequence-min.js', function() {
+      // Trim and inject h2 for mobile
+      $('.fake-modal').each( function(i) {
+        var tabTitle = $.trim($(this).text()),
+            tabContent = $(this).data('tab');
+  
+            // Log the h2's
+        $(tabContent).prepend('<h2 class="tab-title">' + tabTitle + '</h2>')
+        WDN.log('Tab title is: ' + tabTitle);
+      });
+
      execute(); 
     });
   });  
 
 function execute() {
-  var $ = WDN.jQuery,
-   onlyOnce = true,
+  var onlyOnce = true,
   shift 
   hashSwitch = false,
   options = {
@@ -186,19 +196,7 @@ function execute() {
   // Refresh tabbed content
   $(window).on('hashchange load', function(e) {
        e.preventDefault();
-  
-       // Trim and inject h2 for mobile
-       if (onlyOnce == true) {
-            $('.fake-modal').each( function(i) {
-              var tabTitle = $.trim($(this).text()),
-                tabContent = $(this).data('tab');
-  
-              $(tabContent).prepend('<h2 class="tab-title">' + tabTitle + '</h2>')
-              WDN.log('Tab title is: ' + tabTitle);
-              onlyOnce = false;
-            });
-        }
-  
+   
         // Load the content
         $('.ec-region-list > article').not('.animate-in .ec-region-list > .ec-region-article:first').stop(true, false).fadeOut(300);
         $('.animate-in .ec-region-list > .ec-region-article:first').hide().stop(true, false).fadeIn(300);
