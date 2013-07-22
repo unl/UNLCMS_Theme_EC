@@ -13,8 +13,10 @@ WDN.loadJQuery(function () {
         //WDN.log('Tab title is: ' + tabTitle);
      });
 
-    if (location.hash) {
-      var theLocation = $(location.hash).offset().top - 60; // move window to top, add buffer
+    if (window.location.hash) {
+      var theHash = window.location.hash();
+      $(theHash).css({'opacity' : '0.8'});
+      var theLocation = $(theHash).offset().top - 60; // move window to top, add buffer
       $('html, body').animate({
           scrollTop: theLocation
       }, 500);
@@ -45,7 +47,7 @@ function execute() {
   sequence;
 
   // Do we need the splash page?
-  if (window.location.hash === "") {
+  if (!window.location.hash) {
 		// Fade in Splash intro
 		$('#intro').hide().delay(200).stop(true, false).fadeIn('slow');
 
