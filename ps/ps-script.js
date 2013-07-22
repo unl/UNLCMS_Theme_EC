@@ -14,7 +14,15 @@ WDN.loadJQuery(function () {
             // Log the h2's
             $(tabContent).prepend('<h2 class="tab-title">' + tabTitle + '</h2>')
             //WDN.log('Tab title is: ' + tabTitle);
+
          });
+
+        if (window.location.hash !== "") {
+          var theLocation = $(window.location.hash).offset().top;
+          $('html, body').animate({
+              scrollTop: theLocation
+          }, 500);
+        }
       } else {
          execute();
       }
