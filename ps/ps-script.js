@@ -16,6 +16,7 @@ WDN.loadJQuery(function () {
     $(window).on('hashchange load', function(e) {
         var theHash = window.location.hash;
         WDN.navigation.destroyMobile(); //close the mobile navigation
+        WDN.navigation.setupMobile(); //reset the mobile navigation
         mobileScroll(theHash);
     });
 
