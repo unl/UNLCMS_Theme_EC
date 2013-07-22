@@ -4,7 +4,7 @@ WDN.loadJQuery(function () {
   var wi = $(window).width();
   if (wi <= 768){
      // Trim and inject h2 for mobile
-     $('.fake-modal').each( function(i) {
+     $('.fake-modal').each( function (i) {
         var tabTitle = $.trim($(this).text()),
         tabContent = $(this).data('tab');
 
@@ -13,15 +13,15 @@ WDN.loadJQuery(function () {
         //WDN.log('Tab title is: ' + tabTitle);
      });
 
-    if (window.location.hash) {
-      var theLocation = $(window.location.hash).offset().top - 60; // move window to top, add buffer
+    if (location.hash) {
+      var theLocation = $(location.hash).offset().top - 60; // move window to top, add buffer
       $('html, body').animate({
           scrollTop: theLocation
       }, 500);
     }
   } else {
-    WDN.loadJS('sites/all/themes/UNLCMS_Theme_EC/ps/jquery.ba-hashchange.min.js', function(){
-      WDN.loadJS('sites/all/themes/UNLCMS_Theme_EC/ps/jquery.sequence-min.js', function() {
+    WDN.loadJS('sites/all/themes/UNLCMS_Theme_EC/ps/jquery.ba-hashchange.min.js', function (){
+      WDN.loadJS('sites/all/themes/UNLCMS_Theme_EC/ps/jquery.sequence-min.js', function () {
         execute();
       });
     });
@@ -51,7 +51,7 @@ function execute() {
 
 		// Click button to start Sequence.js
 		$('#start').click( function() {
-			$('#intro').stop(true, false).fadeOut('slow', function() {
+			$('#intro').stop(true, false).fadeOut('slow', function () {
 				$('#compass-nav').stop(true, false).fadeIn('slow');
 				$('.sequence-next').stop(true, false).fadeIn('slow');
         window.location.hash = 'frame-1';
@@ -64,31 +64,31 @@ function execute() {
     // Put bar in correct position
     var frameNum = parseInt(window.location.hash.replace(/#frame-/gi, ''));
     var marker = frameNum + 48;
-	  $('#compass-nav').stop().delay(750).stop(true, false).fadeIn('slow');
-	  sequence = $("#sequence").sequence(options).data("sequence");
+    $('#compass-nav').stop().delay(750).stop(true, false).fadeIn('slow');
+    sequence = $("#sequence").sequence(options).data("sequence");
     frameChange(marker);
   }
 
   // Key press listener
-  $(document).keydown( function(e) {
+  $(document).keydown( function (e) {
     frameChange(e);
     return false;
   });
-    
+
   //Compass-nav functionality
-  $(".milestone").click( function() {
+  $(".milestone").click( function () {
     // Acquire key code
     var marker = parseInt($(this).html()) + 48;
     frameChange(marker);
   });
 
   // NEXT BUTTON
-  $('.sequence-next').click( function() {
-	  frameChange(39);
+  $('.sequence-next').click( function () {
+    frameChange(39);
   });
 
   // PREV ARROW
-  $('.sequence-prev').click( function() {
+  $('.sequence-prev').click( function () {
     frameChange(37);
   });
 
