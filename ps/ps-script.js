@@ -1,7 +1,7 @@
 WDN.loadJQuery(function () {
   var $ = WDN.jQuery;
   // Detect browser size, if mobile max-width: 768px, don't execute
-  var wi = $(window).width();  
+  var wi = $(window).width();
   if (wi <= 768){
      // Trim and inject h2 for mobile
      $('.fake-modal').each( function(i) {
@@ -9,7 +9,7 @@ WDN.loadJQuery(function () {
         tabContent = $(this).data('tab');
 
         // Log the h2's
-        $(tabContent).prepend('<h2 class="tab-title">' + tabTitle + '</h2>')
+        $(tabContent).prepend('<h2 class="tab-title">' + tabTitle + '</h2>');
         //WDN.log('Tab title is: ' + tabTitle);
      });
 
@@ -21,35 +21,34 @@ WDN.loadJQuery(function () {
     }
   } else {
     WDN.loadJS('sites/all/themes/UNLCMS_Theme_EC/ps/jquery.ba-hashchange.min.js', function(){
-    WDN.loadJS('sites/all/themes/UNLCMS_Theme_EC/ps/jquery.sequence-min.js', function() {
-     execute(); 
+      WDN.loadJS('sites/all/themes/UNLCMS_Theme_EC/ps/jquery.sequence-min.js', function() {
+        execute();
+      });
     });
-  }); 
   }
-   
 
 function execute() {
   var onlyOnce = true,
-  shift 
+  shift,
   hashSwitch = false,
   options = {
     cycle: false,
-	  hashTags: true,
-  	nextButton: true,
-  	prevButton: true,
-  	pagination: true,
-  	animateStartingFrameIn: true,
-  	autoPlay: false,
-  	preloader: true,
-  	preloadTheseFrames: [1]
+    hashTags: true,
+    nextButton: true,
+    prevButton: true,
+    pagination: true,
+    animateStartingFrameIn: true,
+    autoPlay: false,
+    preloader: true,
+    preloadTheseFrames: [1]
   },
   sequence;
-		
+
   // Do we need the splash page?
-  if (window.location.hash == "") {
+  if (window.location.hash === "") {
 		// Fade in Splash intro
 		$('#intro').hide().delay(200).stop(true, false).fadeIn('slow');
-  				
+
 		// Click button to start Sequence.js
 		$('#start').click( function() {
 			$('#intro').stop(true, false).fadeOut('slow', function() {
@@ -57,7 +56,7 @@ function execute() {
 				$('.sequence-next').stop(true, false).fadeIn('slow');
         window.location.hash = 'frame-1';
 			});
-  			
+
 			sequence = $("#sequence").sequence(options).data("sequence");
 		});
   } else {
