@@ -13,19 +13,25 @@ WDN.loadJQuery(function () {
         //WDN.log('Tab title is: ' + tabTitle);
      });
 
-    if (window.location.hash) {
-      var theHash = window.location.hash;
-      var theLocation = $(theHash).offset().top - 60; // move window to top, add buffer
-      $('html, body').animate({
-          scrollTop: theLocation
-      }, 500);
-    }
+    $(window).on('hashchange load', function(e) {
+        var theHash = window.location.hash;
+        WDN.navigation.destroyMobile(); //close the mobile navigation
+        mobileScroll(theHash);
+    });
+
   } else {
     WDN.loadJS('sites/all/themes/UNLCMS_Theme_EC/ps/jquery.ba-hashchange.min.js', function () {
       WDN.loadJS('sites/all/themes/UNLCMS_Theme_EC/ps/jquery.sequence-min.js', function () {
         execute();
       });
     });
+  }
+
+  function mobileScroll (theHash) {
+    var theLocation = $(theHash).offset().top - 60; // move window to top, add buffer
+    $('html, body').animate({
+        scrollTop: theLocation
+    }, 500);
   }
 
   function execute () {
