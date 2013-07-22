@@ -18,7 +18,7 @@ WDN.loadJQuery(function () {
          });
 
         if (window.location.hash !== "") {
-          var theLocation = $(window.location.hash).offset().top;
+          var theLocation = $(window.location.hash).offset().top - 60; // move window to top, add buffer
           $('html, body').animate({
               scrollTop: theLocation
           }, 500);
