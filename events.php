@@ -8,8 +8,10 @@
 <?php
     $events = simplexml_load_file('http://events.unl.edu/explorecenter/upcoming/?format=xml&limit=4');
     foreach ($events as $event) {
-        $date = strtotime($event->DateTime[0]->StartDate);
-        $time = strtotime($event->DateTime[0]->StartTime);
+        $date = $event->DateTime[0]->StartDate.' '.$event->DateTime[0]->StartTime;
+        // Events system outputs a GMT time when it's really America/Chicago, so trim off the Z
+        $date = strtotime(trim($date, 'Z'));
+        $time = $date;
         $location = $event->Locations[0]->Location[0]->LocationName;
         echo '<li class="wdn-col event-listing">
              <div class="date center">
